@@ -1,6 +1,6 @@
 import Image from "next/image";
-import HeaderBar from "./components/organisms/HeaderBar/HeaderBar";
-import CarouselComp from "./components/organisms/Carousel/CarouselComp";
+import HeaderBar from "../components/organisms/HeaderBar/HeaderBar";
+import CarouselComp from "../components/organisms/Carousel/CarouselComp";
 
 const images = [
   "https://via.placeholder.com/800x400",
