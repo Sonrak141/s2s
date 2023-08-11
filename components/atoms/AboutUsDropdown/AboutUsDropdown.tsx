@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 function AboutUsDropdown() {
-  const ref = useRef();
+  const ref: any = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {

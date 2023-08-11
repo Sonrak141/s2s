@@ -4,7 +4,7 @@ import { document } from "postcss";
 import React, { useState, useRef, useEffect } from "react";
 
 function NavDropdown() {
-  const ref = useRef();
+  const ref: any = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
