@@ -4,28 +4,28 @@ export const footerLinksCategories = [
   {
     title: "About Us",
     links: [
-      { title: "Who we are", url: "/" },
-      { title: "Vision", url: "/" },
-      { title: "Mision", url: "/" },
-      { title: "Strategy", url: "/" },
-      { title: "Team members", url: "/" },
+      { title: "Who we are", url: "/aboutus#whoweare" },
+      { title: "Vision", url: "/aboutus#vision" },
+      { title: "Mision", url: "/aboutus#mision" },
+      { title: "Strategy", url: "/aboutus#stretegy" },
+      { title: "Team members", url: "/aboutus#teammembers" },
     ],
   },
   {
     title: "Business",
     links: [
-      { title: "Defense", url: "/" },
-      { title: "HealthCare", url: "/" },
-      { title: "Construction", url: "/" },
-      { title: "Agrotech", url: "/" },
-      { title: "Logistics", url: "/" },
-      { title: "Technology", url: "/" },
-      { title: "Hospitality", url: "/" },
+      { title: "Defense", url: "/defense" },
+      { title: "HealthCare", url: "/healthcare" },
+      { title: "Construction", url: "/construction" },
+      { title: "Agrotech", url: "/agrotech" },
+      { title: "Logistics", url: "/logistic" },
+      { title: "Technology", url: "/technology" },
+      { title: "Hospitality", url: "/hospitality" },
     ],
   },
   {
     title: "Contact Us",
-    links: [{ title: "Send us a message", url: "/" }],
+    links: [{ title: "Send us a message", url: "/contactus" }],
   },
 ];
 export const links = [
