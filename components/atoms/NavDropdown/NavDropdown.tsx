@@ -22,7 +22,7 @@ function NavDropdown() {
   }, [isOpen]);
 
   return (
-    <div className="my-0 mx-auto text-white" ref={ref}>
+    <div className="text-lg  my-4 md:my-0 md:mx-4 text-white" ref={ref}>
       <button
         type="button"
         onClick={toggleDropdown}
@@ -45,12 +45,12 @@ function NavDropdown() {
         </svg>
       </button>
       {isOpen && (
-        <div className="flex text-center mt-2 w-56 rounded-md shadow-lg bg-white/90 text-black  flex-col absolute">
+        <div className="flex md:text-center mt-2 w-56 md:rounded-md shadow-lg md:bg-white/90 md:text-black  flex-col md:absolute">
           <Link
-            href="/defense"
+            href="/defence"
             className="pt-2 pb-2 hover:bg-blue-300 hover:text-black rounded-sm"
           >
-            Defense
+            Defence
           </Link>
           <Link
             href="/healthcare"

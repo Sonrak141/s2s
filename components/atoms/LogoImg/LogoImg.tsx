@@ -9,8 +9,8 @@ function LogoImg() {
         <Image
           src="/LogoMain.png"
           alt="South 2 South Logo"
-          className="m-3"
-          width={300}
+          className="md:m-3"
+          width={400}
           height={36}
           priority
         />

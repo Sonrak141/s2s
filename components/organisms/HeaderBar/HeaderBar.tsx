@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LogoImg from "../../atoms/LogoImg/LogoImg";
 import NavBar from "../../molecules/NavBar/NavBar";
+import SocialMediaNav from "@/components/molecules/SocialMediaNav/SocialMediaNav";
 
 type HeaderBarProps = {
   active: boolean;
@@ -11,8 +12,8 @@ function HeaderBar({ active }: HeaderBarProps) {
     <div
       className={
         active
-          ? "flex items-center justify-between w-full p-5 absolute top-0 z-10"
-          : "flex items-center justify-between w-full p-5"
+          ? "md:flex hidden items-center justify-between w-full p-5 absolute top-0 z-10 bg-black/30 "
+          : "md:flex hidden items-center justify-between w-full p-5"
       }
     >
       <div>
@@ -25,6 +26,9 @@ function HeaderBar({ active }: HeaderBarProps) {
 
         <button className="text-xs mx-4 text-white">ES</button>
         <button className="text-xs mx-4 text-white">AR</button>
+      </div>
+      <div className="text-white">
+        <SocialMediaNav />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function NavBar() {
       <div className="flex justify-between">
         <AboutUsDropdown />
         <NavDropdown />
-        <Link href="/contactus" className="ml-7 text-white">
+        <Link href="/contactus" className="text-lg ml-7 text-white">
           Contact Us
         </Link>
       </div>

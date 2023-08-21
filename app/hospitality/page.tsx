@@ -15,6 +15,7 @@ const contentStyleTitle: React.CSSProperties = {
   alignItems: "end",
   color: "#fff",
   fontWeight: "bold",
+  backgroundPosition: "bottom",
 };
 
 function page() {

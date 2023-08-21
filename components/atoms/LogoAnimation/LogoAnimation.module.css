@@ -1,0 +1,29 @@
+/* ImageFillAnimation.css */
+.image_container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  transition: background-color 1s ease;
+}
+
+.filling_image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  object-fit: cover;
+  transition: opacity 1s ease;
+}
+
+.filled {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* Adjust the height as needed */
+  transition: background-color 1s ease;
+  background-color: transparent;
+}
+
+.filled .filling_image {
+  opacity: 0; /* Adjust the opacity level for the filling effect */
+}

@@ -5,8 +5,6 @@ export const footerLinksCategories = [
     title: "About Us",
     links: [
       { title: "Who we are", url: "/aboutus#whoweare" },
-      { title: "Vision", url: "/aboutus#vision" },
-      { title: "Mision", url: "/aboutus#mision" },
       { title: "Strategy", url: "/aboutus#stretegy" },
       { title: "Team members", url: "/aboutus#teammembers" },
     ],
@@ -25,7 +23,7 @@ export const footerLinksCategories = [
   },
   {
     title: "Contact Us",
-    links: [{ title: "Send us a message", url: "/contactus" }],
+    links: [],
   },
 ];
 export const links = [

@@ -20,7 +20,7 @@ function AboutUsDropdown() {
   }, [isOpen]);
 
   return (
-    <div className="my-0 mx-4 text-white" ref={ref}>
+    <div className="text-lg md:my-0 my-4 md:mx-4 text-white" ref={ref}>
       <button
         type="button"
         onClick={toggleDropdown}
@@ -43,24 +43,12 @@ function AboutUsDropdown() {
         </svg>
       </button>
       {isOpen ? (
-        <div className="flex text-center mt-2 w-56 rounded-md shadow-lg bg-white/90 text-black  flex-col absolute">
+        <div className="flex md:text-center mt-2 md:w-56 w-screen md:rounded-md shadow-lg md:bg-white/90 md:text-black md:absolute  flex-col mx-0">
           <Link
             href="/aboutus#whoweare"
             className="pt-2 pb-2 hover:bg-blue-300 hover:text-black rounded-sm"
           >
             Who we are
-          </Link>
-          <Link
-            href="/aboutus#vision"
-            className="pt-2 pb-2 hover:bg-blue-300 hover:text-black rounded-sm"
-          >
-            Vision
-          </Link>
-          <Link
-            href="/aboutus#mision"
-            className="pt-2 pb-2 hover:bg-blue-300 hover:text-black rounded-sm"
-          >
-            Mision
           </Link>
           <Link
             href="/aboutus#strategy"
