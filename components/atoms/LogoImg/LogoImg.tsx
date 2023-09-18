@@ -5,11 +5,11 @@ import Link from "next/link";
 function LogoImg() {
   return (
     <div>
-      <Link href="/">
+      <Link href='/'>
         <Image
-          src="/LogoMain.png"
-          alt="South 2 South Logo"
-          className="md:m-3"
+          src='/S2S_International_Holding/S2SLogos-07.png'
+          alt='South 2 South Logo'
+          className='md:m-3'
           width={400}
           height={36}
           priority

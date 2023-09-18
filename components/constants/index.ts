@@ -33,8 +33,19 @@ export const links = [
   { name: "Meet our leadership", href: "#" },
 ];
 export const stats = [
-  { name: "Offices worldwide", value: "12" },
-  { name: "Full-time colleagues", value: "300+" },
-  { name: "Hours per week", value: "40" },
-  { name: "Paid time off", value: "Unlimited" },
+  {
+    name: "Market Expansion:",
+    value:
+      "By bringing reputable Latin American companies to the MENA & SEA regions, we act as their trusted commercial representatives, helping them navigate and thrive in new markets.",
+  },
+  {
+    name: "Sectoral Diversification:",
+    value:
+      "Through strategic involvement in healthcare and real estate projects, we play a vital role in enhancing critical infrastructure and promoting advancements in these key sectors.",
+  },
+  {
+    name: "Investment Ventures:",
+    value:
+      "We identify and invest in promising companies and projects, supporting their growth and success while building a diverse and sustainable investment portfolio.",
+  },
 ];

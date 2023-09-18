@@ -6,3 +6,49 @@
 body {
   font-family: "Manrope", sans-serif !important;
 }
+
+.doctorCarousel {
+  background-image: url("/Photography/Carusel/doctor-mobile.png");
+}
+.bogotaCarousel {
+  background-image: url("/Photography/Carusel/b-mobile.png");
+}
+.abuCarousel {
+  background-image: url("/Photography/Carusel/abuBeach-mobile.png");
+}
+.whoweareBanner {
+  background-image: url("/Photography/WhoWeAre/about-banner-mobile.png");
+}
+.defenceBanner {
+  background-image: url("/Photography/Defence/banner-mobile.png");
+}
+.healthcareBanner {
+  background-image: url("/Photography/Healthcare/banner-mobile.png");
+}
+.constructionBanner {
+  background-image: url("/Photography/Construction/banner-mobile.png");
+}
+
+@media (min-width: 768px) {
+  .doctorCarousel {
+    background-image: url("/Photography/Carusel/doctor.png");
+  }
+  .bogotaCarousel {
+    background-image: url("/Photography/Carusel/BogotaCenter.png");
+  }
+  .abuCarousel {
+    background-image: url("/Photography/Carusel/abuBeach.png");
+  }
+  .whoweareBanner {
+    background-image: url("/Photography/WhoWeAre/about-banner.png");
+  }
+  .defenceBanner {
+    background-image: url("/Photography/Defence/banner.png");
+  }
+  .healthcareBanner {
+    background-image: url("/Photography/Healthcare/banner.png");
+  }
+  .constructionBanner {
+    background-image: url("/Photography/Construction/banner.png");
+  }
+}

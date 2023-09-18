@@ -2,84 +2,76 @@ import React from "react";
 import { Carousel, ConfigProvider } from "antd";
 import Link from "next/link";
 
-const contentStyleFirst: React.CSSProperties = {
-  height: "100vh",
-  color: "#2A8CC6",
-  lineHeight: "100px",
-  backgroundImage: 'url("/AbuBuilding.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontWeight: "bold",
+const mediaQuery = "@media (min-width: 768px)";
+const mediaQueryStyles: React.CSSProperties = {
+  backgroundImage: 'url("/Photography/Carusel/doctor.png")', // Change the image for smaller screens
 };
-const contentStyleSecond: React.CSSProperties = {
-  height: "100vh",
-  color: "#2A8CC6",
-  lineHeight: "100px",
-  backgroundImage: 'url("/Healthcare.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontWeight: "bold",
-  paddingTop: "20rem",
+const mergedStyles = {
+  backgroundImage: 'url("/Photography/Carusel/doctor-mobile.png")',
+  [mediaQuery]: mediaQueryStyles,
 };
-const contentStyleThird: React.CSSProperties = {
-  height: "100vh",
-  color: "#2A8CC6",
-  lineHeight: "100px",
-  backgroundImage: 'url("/BogotaAerial.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontWeight: "bold",
-};
+
+// const contentStyleFirst: React.CSSProperties = {
+//   height: "100vh",
+//   color: "#FF0000",
+//   lineHeight: "100px",
+//   backgroundImage: 'url("/Photography/Carusel/BogotaCenter.png")',
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   fontWeight: "bold",
+// };
+// const contentStyleSecond: React.CSSProperties = {
+//   height: "100vh",
+//   color: "#FF0000",
+//   lineHeight: "100px",
+//   backgroundImage: 'url("/Photography/Carusel/doctor.png")',
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   fontWeight: "bold",
+//   paddingTop: "20rem",
+// };
+// const contentStyleThird: React.CSSProperties = {
+//   height: "100vh",
+//   color: "#FF0000",
+//   lineHeight: "100px",
+//   backgroundImage: 'url("Photography/Carusel/abuBeach.png")',
+//   backgroundRepeat: "no-repeat",
+//   backgroundSize: "cover",
+//   fontWeight: "bold",
+// };
 
 const CarouselComp: React.FC = () => (
   <ConfigProvider theme={{}}>
     <Carousel
       autoplay
-      effect="fade"
+      effect='fade'
       autoplaySpeed={8000}
-      easing="200"
+      easing='200'
       pauseOnFocus={false}
       pauseOnHover={false}
     >
-      <div className="">
-        <div style={contentStyleFirst}>
-          <h2 className="pt-60 pl-10 md:text-[60px] text-[40px]">
-            <span className="text-white">LATAM companies in the</span> regional
-            market
+      <div className=''>
+        <div className='h-screen text-red-600 leading-100 bg-cover bg-no-repeat font-bold bogotaCarousel'>
+          <h2 className='pt-60 pl-10 md:text-[60px] text-[40px]'>
+            <span className='text-white'>Embracing diversity. </span>
+            Inspiring growth
           </h2>
-          <Link
-            href="/aboutus"
-            className="border-white border-2 p-4 text-xs ml-12 text-white"
-          >
-            Get to know us
-          </Link>
         </div>
       </div>
       <div>
-        <div style={contentStyleSecond}>
-          <h2 className="md:pt-60 pl-10 text-white md:text-[60px] text-[40px] ">
-            <span className="">We foster responsible</span> business practices
+        <div className='h-screen text-red-600 leading-100 bg-cover bg-no-repeat font-bold pt-80 doctorCarousel'>
+          <h2 className='md:pt-60 pl-10  md:text-[60px] text-[40px] '>
+            <span className='text-white'>Fueling Ambitions, </span>
+            Holding Excellence
           </h2>
-          <Link
-            href="/aboutus"
-            className="border-white  border-2 p-4 text-xs ml-12 text-white "
-          >
-            Get to know us
-          </Link>
         </div>
       </div>
       <div>
-        <div style={contentStyleThird}>
-          <h2 className="pt-60 pl-10 text-white md:text-[60px] text-[40px]">
-            We foster responsible{" "}
-            <span className="text-white">business practices</span>
+        <div className='h-screen text-red-600 leading-100 bg-cover bg-no-repeat font-bold abuCarousel'>
+          <h2 className='pt-60 pl-10  md:text-[60px] text-[40px]'>
+            Balancing Local Roots with
+            <span className='text-white'>Global Aspirations. </span>
           </h2>
-          <Link
-            href="/aboutus"
-            className="border-white border-2 p-4 text-xs ml-12 text-white"
-          >
-            Get to know us
-          </Link>
         </div>
       </div>
     </Carousel>
