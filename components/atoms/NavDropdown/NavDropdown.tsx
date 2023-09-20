@@ -26,7 +26,7 @@ function NavDropdown() {
       <button
         type='button'
         onClick={toggleDropdown}
-        className='inline-flex justify-center'
+        className='inline-flex justify-center text-sm hover:text-red-500'
         id='dropdown-toggle'
       >
         Business

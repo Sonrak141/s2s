@@ -10,7 +10,7 @@ function LogoImg() {
           src='/S2S_International_Holding/S2SLogos-07.png'
           alt='South 2 South Logo'
           className='md:m-3'
-          width={400}
+          width={200}
           height={36}
           priority
         />

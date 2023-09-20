@@ -5,11 +5,14 @@ import Link from "next/link";
 
 function NavBar() {
   return (
-    <div className="flex justify-between">
-      <div className="flex justify-between">
+    <div className='flex justify-between'>
+      <div className='flex justify-between'>
         <AboutUsDropdown />
         <NavDropdown />
-        <Link href="/contactus" className="text-lg ml-7 text-white">
+        <Link
+          href='/contactus'
+          className='text-sm ml-7 md:mt-[0.33rem] text-white hover:text-red-500'
+        >
           Contact Us
         </Link>
       </div>
