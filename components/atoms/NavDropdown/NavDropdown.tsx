@@ -3,33 +3,19 @@ import Link from "next/link";
 import { document } from "postcss";
 import React, { useState, useRef, useEffect } from "react";
 
-function NavDropdown() {
+function NavDropdown({ toggleDropdown }: any) {
   const ref: any = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
-  };
-
-  useEffect(() => {
-    const check = (e: { target: any }) => {
-      if (isOpen && ref.current && !ref.current?.contains(e.target)) {
-        setIsOpen(false);
-      }
-    };
-    window.addEventListener("mousedown", check);
-    return () => window.removeEventListener("mousedown", check);
-  }, [isOpen]);
-
   return (
-    <div className='text-lg  my-4 md:my-0 md:mx-4 text-white' ref={ref}>
+    <div className='text-lg  my-4 md:my-0 md:mx-4 ' ref={ref}>
       <button
         type='button'
         onClick={toggleDropdown}
         className='inline-flex justify-center text-sm hover:text-red-500'
         id='dropdown-toggle'
       >
-        Business
+        What We Do
         <svg
           className='-mr-1 ml-2 h-5 w-5'
           xmlns='http://www.w3.org/2000/svg'
@@ -44,52 +30,6 @@ function NavDropdown() {
           />
         </svg>
       </button>
-      {isOpen && (
-        <div className='flex md:text-center mt-2 w-56 md:rounded-md shadow-lg md:bg-white/90 md:text-black  flex-col md:absolute'>
-          <Link
-            href='/defence'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Defence
-          </Link>
-          <Link
-            href='/healthcare'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Healthcare
-          </Link>
-          <Link
-            href='/construction'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Construction
-          </Link>
-          <Link
-            href='/agrotech'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            AgriTech
-          </Link>
-          <Link
-            href='/logistic'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Logistics
-          </Link>
-          <Link
-            href='/technology'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Technology
-          </Link>
-          <Link
-            href='/hospitality'
-            className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-black rounded-sm'
-          >
-            Hospitality
-          </Link>
-        </div>
-      )}
     </div>
   );
 }

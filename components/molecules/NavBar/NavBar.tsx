@@ -3,15 +3,15 @@ import NavDropdown from "../../atoms/NavDropdown/NavDropdown";
 import AboutUsDropdown from "@/components/atoms/AboutUsDropdown/AboutUsDropdown";
 import Link from "next/link";
 
-function NavBar() {
+function NavBar({ aboutDrop, businessDrop }: any) {
   return (
     <div className='flex justify-between'>
       <div className='flex justify-between'>
-        <AboutUsDropdown />
-        <NavDropdown />
+        <AboutUsDropdown toggleDropdown={aboutDrop} />
+        <NavDropdown toggleDropdown={businessDrop} />
         <Link
           href='/contactus'
-          className='text-sm ml-7 md:mt-[0.33rem] text-white hover:text-red-500'
+          className='text-sm ml-7 md:mt-[0.33rem]  hover:text-red-500'
         >
           Contact Us
         </Link>

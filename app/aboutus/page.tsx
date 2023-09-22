@@ -41,54 +41,56 @@ const page = () => {
       <div className='' id='whoweare'>
         <AboutUsSection />
       </div>
-      <div id='vision'>
-        <div className='bg-white py-24 sm:py-32'>
-          <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-            <div className='mx-auto max-w-2xl lg:text-center'>
-              <h2 className='text-base font-semibold leading-7 text-[#333333]'>
-                About us
-              </h2>
-              <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
-                Vision
-              </p>
-              <p className='mt-6 text-lg leading-8 text-[#161616]'>
-                We strive for our investments to deliver sustainable financial
-                returns and to be pioneers in creating strategic partnerships
-                for technology transfer among companies, organisations, and
-                governments.
-              </p>
-            </div>
-            <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
-              <p className='text-center'>
-                By doing so, we will contribute to the socio-economic
-                development of nations.
-              </p>
+      <div className='flex flex-col md:flex-row'>
+        <div id='vision'>
+          <div className='bg-white py-24 sm:py-32'>
+            <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+              <div className='mx-auto max-w-2xl lg:text-center'>
+                <h2 className='text-base font-semibold leading-7 text-[#333333]'>
+                  About us
+                </h2>
+                <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+                  Vision
+                </p>
+                <p className='mt-6 text-lg leading-8 text-[#161616]'>
+                  We strive for our investments to deliver sustainable financial
+                  returns and to be pioneers in creating strategic partnerships
+                  for technology transfer among companies, organisations, and
+                  governments.
+                </p>
+              </div>
+              <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+                <p className='text-center'>
+                  By doing so, we will contribute to the socio-economic
+                  development of nations.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id='mision'>
-        <div className='bg-white py-24 sm:py-32'>
-          <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-            <div className='mx-auto max-w-2xl lg:text-center'>
-              <h2 className='text-base font-semibold leading-7 text-[#333333]'>
-                About us
-              </h2>
-              <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
-                Mision
-              </p>
-              <p className='mt-6 text-lg leading-8 text-[#161616]'>
-                To establish strategic alliances with Latin American companies
-                and serve as their trusted commercial representatives in the
-                MENA & SEA regions.
-              </p>
-            </div>
-            <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
-              <p className='text-center'>
-                Our core focus is acting as a catalyst in key economic sectors,
-                facilitating growth opportunities, and creating valuable
-                synergies for all stakeholders involved.
-              </p>
+        <div id='mission'>
+          <div className='bg-white py-24 sm:py-32'>
+            <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+              <div className='mx-auto max-w-2xl lg:text-center'>
+                <h2 className='text-base font-semibold leading-7 text-[#333333]'>
+                  About us
+                </h2>
+                <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+                  Mision
+                </p>
+                <p className='mt-6 text-lg leading-8 text-[#161616]'>
+                  To establish strategic alliances with Latin American companies
+                  and serve as their trusted commercial representatives in the
+                  MENA & SEA regions.
+                </p>
+              </div>
+              <div className='mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl'>
+                <p className='text-center'>
+                  Our core focus is acting as a catalyst in key economic
+                  sectors, facilitating growth opportunities, and creating
+                  valuable synergies for all stakeholders involved.
+                </p>
+              </div>
             </div>
           </div>
         </div>
