@@ -7,7 +7,7 @@ function LogoImg() {
     <div>
       <Link href='/'>
         <Image
-          src='/S2S_International_Holding/S2SLogos-07.png'
+          src='/S2S_International_Holding/S2SLogos-05.png'
           alt='South 2 South Logo'
           className='md:m-3'
           width={200}

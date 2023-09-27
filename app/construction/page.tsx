@@ -5,6 +5,7 @@ import LogoDefense from "@/components/atoms/LogoDefense/LogoDefense";
 import DefenseAboutSection from "@/components/molecules/DefenseAboutSection/DefenseAboutSection";
 import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
 import MobileNav from "@/components/organisms/MobileNav/MobileNav";
+import ConstructionAboutSection from "@/components/molecules/ConstructionAboutSection/ConstructionAboutSection";
 
 const contentStyleTitle: React.CSSProperties = {
   height: "100vh",
@@ -23,12 +24,16 @@ function page() {
     <div>
       <MobileNav />
       <HeaderBar active={true} />
-      <div style={contentStyleTitle} className='constructionBanner'>
-        <h2 className='ml-20 mb-12'>Construction</h2>
+      <div className='constructionBanner'>
+        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
+          Construction
+        </h2>
+        <video autoPlay loop muted className='w-full h-screen object-cover'>
+          <source src='/Video/Desert.mov' type='video/mp4' />
+        </video>
       </div>
       <div className='mt-20'>
-        <DefenseAboutSection />
-        <DefenseStats />
+        <ConstructionAboutSection />
       </div>
     </div>
   );

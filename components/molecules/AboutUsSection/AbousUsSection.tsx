@@ -1,3 +1,4 @@
+"use client";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
@@ -9,6 +10,9 @@ import {
   ArrowsRightLeftIcon,
   BoltIcon,
 } from "@heroicons/react/20/solid";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const features = [
   {
@@ -50,11 +54,15 @@ const features = [
 ];
 
 export default function AboutUsSection() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className='overflow-hidden bg-white py-14 sm:py-32'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
-          <div className='lg:pr-8 lg:pt-4'>
+          <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
             <div className='lg:max-w-lg'>
               <h2 className='text-base font-semibold leading-7 text-[#333333]'>
                 About Us
@@ -71,6 +79,7 @@ export default function AboutUsSection() {
                 to the socio-economic development of nations.
               </p>
               <dl className='mt-10 max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>
+                <h4 className='text-md font-semibold'>Our Values</h4>
                 {features.map((feature) => (
                   <div key={feature.name} className='relative pl-9'>
                     <dt className='inline font-semibold text-gray-900'>
@@ -87,9 +96,10 @@ export default function AboutUsSection() {
             </div>
           </div>
           <img
-            src='/Photography/WhoWeAre/s2sRep.png'
+            data-aos='fade-left'
+            src='/Photography/WhoWeAre/whoWeAre.png'
             alt='Product screenshot'
-            className='w-[48rem] max-w-none rounded-xl  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
+            className='max-w-none mt-10  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
             width={2432}
             height={1442}
           />

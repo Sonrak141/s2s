@@ -24,9 +24,13 @@ function MobileNav() {
       </button>
       {open && (
         <div className='w-full flex flex-col text-left items-start'>
-          <NavDropdown />
-          <AboutUsDropdown />
-          <Link href='/contactus' className='text-lg my-4 text-white'>
+          <Link href='/aboutus' className='text-sm my-4 '>
+            Who we are
+          </Link>
+          <Link href='/whatwedo' className='text-sm my-4 '>
+            What we do
+          </Link>
+          <Link href='/contactus' className='text-sm my-4 '>
             Contac Us
           </Link>
           <SocialMediaNav />

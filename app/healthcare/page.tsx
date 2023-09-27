@@ -24,12 +24,16 @@ function page() {
     <div>
       <MobileNav />
       <HeaderBar active={true} />
-      <div style={contentStyleTitle} className='healthcareBanner'>
-        <h2 className='ml-20 mb-12'>Healthcare</h2>
+      <div className='healthcareBanner'>
+        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
+          Healthcare
+        </h2>
+        <video autoPlay loop muted className='w-full h-screen object-cover'>
+          <source src='/Video/Desert.mov' type='video/mp4' />
+        </video>
       </div>
       <div className='mt-20'>
         <HealthcareAboutSection />
-        <DefenseStats />
       </div>
     </div>
   );

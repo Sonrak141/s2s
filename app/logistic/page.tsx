@@ -4,6 +4,7 @@ import DefenseStats from "@/components/molecules/DefenseStats/DefenseStats";
 import LogoDefense from "@/components/atoms/LogoDefense/LogoDefense";
 import DefenseAboutSection from "@/components/molecules/DefenseAboutSection/DefenseAboutSection";
 import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
+import LogisticAboutSection from "@/components/molecules/LogisticAboutSection/LogisticAboutSection";
 
 const contentStyleTitle: React.CSSProperties = {
   height: "80vh",
@@ -21,12 +22,16 @@ function page() {
   return (
     <div>
       <HeaderBar active={true} />
-      <div style={contentStyleTitle}>
-        <h2 className="ml-20 mb-12">Logistic</h2>
+      <div>
+        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
+          Logistic
+        </h2>
+        <video autoPlay loop muted className='w-full h-screen object-cover'>
+          <source src='/Video/Desert.mov' type='video/mp4' />
+        </video>
       </div>
-      <div className="mt-20">
-        <DefenseAboutSection />
-        <DefenseStats />
+      <div className='mt-20'>
+        <LogisticAboutSection />
       </div>
     </div>
   );

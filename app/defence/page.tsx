@@ -23,12 +23,16 @@ function page() {
     <div>
       <MobileNav />
       <HeaderBar active={true} />
-      <div style={contentStyleTitle} className='defenceBanner'>
-        <h2 className='ml-20 mb-12'>Defense & Security</h2>
+      <div className='defenceBanner'>
+        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
+          Defense & Security
+        </h2>
+        <video autoPlay loop muted className='w-full h-screen object-cover'>
+          <source src='/Video/Desert.mov' type='video/mp4' />
+        </video>
       </div>
       <div className='mt-20'>
         <DefenseAboutSection />
-        <DefenseStats />
       </div>
     </div>
   );
