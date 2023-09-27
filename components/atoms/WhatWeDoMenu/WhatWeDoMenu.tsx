@@ -27,7 +27,7 @@ function WhatWeDoMenu() {
         href='/whatwedo#logistic'
         className='pt-2 pb-2 hover:bg-[#FF0000] hover:text-white px-8 rounded-sm'
       >
-        Logistics
+        Logistic
       </Link>
     </div>
   );
