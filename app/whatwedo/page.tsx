@@ -6,6 +6,7 @@ import HealthcareAboutSection from "@/components/molecules/HealthcareAboutSectio
 import ConstructionAboutSection from "@/components/molecules/ConstructionAboutSection/ConstructionAboutSection";
 import LogisticAboutSection from "@/components/molecules/LogisticAboutSection/LogisticAboutSection";
 import { links, stats } from "@/components/constants";
+import Footer from "@/components/organisms/Footer/Footer";
 
 function page() {
   return (
@@ -66,6 +67,7 @@ function page() {
           <LogisticAboutSection />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

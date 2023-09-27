@@ -10,6 +10,7 @@ import { links, stats } from "@/components/constants";
 import MobileNav from "@/components/organisms/MobileNav/MobileNav";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "@/components/organisms/Footer/Footer";
 
 const contentStyleTitle: React.CSSProperties = {
   height: "80vh",
@@ -97,6 +98,7 @@ const page = () => {
       <div className='py-40' id='teammembers'>
         <TeamSection />
       </div>
+      <Footer />
     </div>
   );
 };
