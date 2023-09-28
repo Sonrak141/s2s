@@ -14,34 +14,34 @@ function page() {
       <MobileNav />
       <HeaderBar active={true} />
       <div className='defenceBanner'>
-        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
+        <h2 className='absolute top-[37rem] left-10 text-white font-bold text-6xl'>
           What we do
         </h2>
-        <video autoPlay loop muted className='w-full h-screen object-cover'>
+        <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
           <source src='/Video/Desert.mov' type='video/mp4' />
         </video>
       </div>
-      <div className='mt-20'>
+      <div className=''>
         <div data-aos='fade-right' id='strategy'>
-          <div className='relative isolate overflow-hidden  py-24 sm:py-32'>
-            <div className='mx-auto max-w-7xl px-6 lg:px-8'>
+          <div className='py-24 sm:py-32'>
+            <div className='mx-auto flex flex-row  px-6 lg:px-8'>
               <div className='mx-auto max-w-2xl lg:mx-0'>
-                <h2 className='text-4xl font-bold tracking-tight text-[#FF0000] sm:text-6xl'>
+                <h2 className='text-4xl font-bold tracking-tight text-[#940000] sm:text-6xl'>
                   Strategy
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600'>
-                  At South2South, we believe that sustainable growth and success
-                  can only be achieved through responsible and ethical business
+                  At S2S, we believe that sustainable growth and success can
+                  only be achieved through responsible and ethical business
                   practices. Our commitment to creating positive socio-economic
                   impacts in the regions we serve is at the heart of everything
-                  we do. We generate value through three distinct pathways:
+                  we do.
                 </p>
               </div>
-              <div className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'>
-                <dl className='mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-3'>
+              <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
+                <dl className=' grid md:mt-20 grid-cols-1 gap-8 md:ml-10 sm:grid-cols-1 lg:grid-cols-1'>
                   {stats.map((stat) => (
                     <div key={stat.name} className='flex flex-col'>
-                      <dt className='text-2xl font-bold leading-7 text-[#FF0000]'>
+                      <dt className='text-2xl font-bold leading-7 text-[#940000]'>
                         {stat.name}
                       </dt>
                       <dd className='text-base   leading-9 tracking-tight text-gray-600'>

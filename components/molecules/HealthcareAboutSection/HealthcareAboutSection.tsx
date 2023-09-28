@@ -56,7 +56,7 @@ function HealthcareAboutSection() {
               <p className='text-base font-semibold leading-7 text-[#333333]'>
                 South2South
               </p>
-              <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+              <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Healthcare
               </h1>
               <p className='mt-6 text-xl leading-8 text-gray-700'>
@@ -72,10 +72,10 @@ function HealthcareAboutSection() {
         </div>
         <div
           data-aos='fade-left'
-          className='-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+          className='-ml-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
         >
           <img
-            className='w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]'
+            className='w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 '
             src='/Photography/Healthcare/healthMain.jpeg'
             alt=''
           />
@@ -91,9 +91,9 @@ function HealthcareAboutSection() {
               <ul
                 data-aos='fade-right'
                 role='list'
-                className='mt-8 space-y-8 text-gray-600'
+                className='space-y-8 text-gray-600'
               >
-                <h3 className='font-bold text-[#FF0000]'>Subsidiaries</h3>
+                <h3 className='font-bold text-[#940000]'>Subsidiaries</h3>
                 <li className='flex gap-x-3'>
                   <span>
                     <strong className='font-semibold text-gray-900 '>

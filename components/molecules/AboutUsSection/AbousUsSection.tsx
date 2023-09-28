@@ -59,16 +59,14 @@ export default function AboutUsSection() {
   }, []);
 
   return (
-    <div className='overflow-hidden bg-white py-14 sm:py-32'>
-      <div className='mx-auto max-w-7xl px-6 lg:px-8'>
-        <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
+    <div className='overflow-hidden bg-white py-14 sm:py-32 md:-mt-20'>
+      <div className='mx-auto max-w-4xl px-6 lg:px-8'>
+        <div className='mx-auto  grid max-w-2xl grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
           <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
-            <div className='lg:max-w-lg'>
-              <h2 className='text-base font-semibold leading-7 text-[#333333]'>
-                About Us
-              </h2>
-              <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
-                Who we are
+            <div className=' md:-ml-60'>
+              <h2 className='text-base font-semibold leading-7 text-[#5d3f3f]'></h2>
+              <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+                About us
               </p>
               <p className='mt-6 text-lg leading-8 text-[#161616]'>
                 Based in Abu Dhabi and supported by High Net Worth Individuals
@@ -84,7 +82,7 @@ export default function AboutUsSection() {
                   <div key={feature.name} className='relative pl-9'>
                     <dt className='inline font-semibold text-gray-900'>
                       <feature.icon
-                        className='absolute left-1 top-1 h-5 w-5 text-[#FF0000]'
+                        className='absolute left-1 top-1 h-5 w-5 text-[#940000]'
                         aria-hidden='true'
                       />
                       {feature.name}
@@ -99,7 +97,7 @@ export default function AboutUsSection() {
             data-aos='fade-left'
             src='/Photography/WhoWeAre/whoWeAre.png'
             alt='Product screenshot'
-            className='max-w-none mt-10  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
+            className='max-w-2xl mt-10  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
             width={2432}
             height={1442}
           />

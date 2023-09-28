@@ -34,18 +34,18 @@ export const links = [
 ];
 export const stats = [
   {
-    name: "Market Expansion:",
+    name: "Strategic Management:",
     value:
-      "By bringing reputable Latin American companies to the MENA & SEA regions, we act as their trusted commercial representatives, helping them navigate and thrive in new markets.",
+      "Strategic Management for our existing subsidiaries in defence, healthcare, construction, and logistics, by fostering collaboration, and optimising resources to ensure effective governance and oversight.",
   },
   {
-    name: "Sectoral Diversification:",
+    name: "Market Expansion:",
     value:
-      "Through strategic involvement in healthcare and real estate projects, we play a vital role in enhancing critical infrastructure and promoting advancements in these key sectors.",
+      "Market Expansion & sectoral diversification, by bringing reputable Latin American companies to the MENA & SEA regions. We act as their trusted commercial representatives, helping them navigate and thrive in new markets, while creating synergies among our diverse portfolio.",
   },
   {
     name: "Investment Ventures:",
     value:
-      "We identify and invest in promising companies and projects, supporting their growth and success while building a diverse and sustainable investment portfolio.",
+      "We identify and invest in promising companies and projects, supporting their growth and success.",
   },
 ];

@@ -11,7 +11,7 @@ function AboutUsDropdown({ toggleDropdown }: any) {
       <button
         type='button'
         onClick={toggleDropdown}
-        className='inline-flex justify-center text-sm hover:text-red-500 ease-in'
+        className='inline-flex justify-center text-md hover:text-[#940000] ease-in'
         id='dropdown'
       >
         Who We Are

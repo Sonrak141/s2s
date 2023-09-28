@@ -3,7 +3,7 @@ import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
 import ContactForm from "@/components/molecules/ContactForm/ContactForm";
 
 const contentStyleTitle: React.CSSProperties = {
-  height: "80vh",
+  height: "130vh",
   backgroundImage: 'url("/abuBuilding.jpg")',
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
@@ -18,11 +18,15 @@ function page() {
   return (
     <div>
       <HeaderBar active={true} />
-      <div style={contentStyleTitle}>
-        <h2 className="ml-20 mb-12">Contact Us</h2>
-      </div>
-      <div className="mt-20">
-        <ContactForm />
+      <div className='grid grid-cols-2'>
+        <div style={contentStyleTitle}>
+          <h2 className='absolute top-[40rem] left-10 text-white font-bold text-6xl'>
+            Contact Us
+          </h2>
+        </div>
+        <div className='mt-20'>
+          <ContactForm />
+        </div>
       </div>
     </div>
   );

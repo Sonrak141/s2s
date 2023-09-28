@@ -1,7 +1,8 @@
 "use client";
-import { useEffect } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LeadershipCard from "@/components/atoms/LeadershipCard/LeadershipCard";
 const people = [
   {
     name: "Angie Tafur",
@@ -34,54 +35,98 @@ const people = [
   // More people...
 ];
 
+const TeamMember = ({ name, imageSrc, onClick, isSelected }: any) => {
+  const memberStyles = isSelected
+    ? "bg-[#940000] text-white"
+    : "hover:bg-gray-100";
+
+  return (
+    <div
+      className={`flex items-center cursor-pointer rounded-lg p-2 ${memberStyles}`}
+      onClick={onClick}
+    >
+      <div className='w-16 h-16 bg-gray-300 rounded-full overflow-hidden'>
+        <img src={imageSrc} alt={`${name}`} className='w-full h-full' />
+      </div>
+      <div className='ml-4'>
+        <p className={isSelected ? "font-semibold" : ""}>{name}</p>
+      </div>
+    </div>
+  );
+};
+
+// TeamDescription component
+const TeamDescription = ({ name, role, description }: any) => {
+  return (
+    <div className='bg-white shadow-lg rounded-lg overflow-hidden p-4'>
+      <h2 className='text-xl font-semibold text-gray-800'>{name}</h2>
+      <p className='text-sm text-gray-600'>{role}</p>
+      <p className='text-gray-700 mt-4'>{description}</p>
+    </div>
+  );
+};
+
 export default function TeamSection() {
+  const [selectedMember, setSelectedMember] = useState(people[0]);
+  const handleMemberClick = (
+    member: SetStateAction<{
+      name: string;
+      role: string;
+      description: string;
+      imageUrl: string;
+      visible: boolean;
+    }>
+  ) => {
+    setSelectedMember(member);
+  };
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className='bg-white'>
+    <div className='bg-white flex'>
       <div
         data-aos='fade-down'
-        className='mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3'
+        className='mx-auto grid  gap-x-8 gap-y-20 px-6 lg:px-8'
       >
         <div className='max-w-2xl'>
-          <h2 className='text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
             Leadership
           </h2>
-          <p className='mt-6 text-lg leading-8 text-gray-600'>
-            Libero fames augue nisl porttitor nisi, quis. Id ac elit odio vitae
-            elementum enim vitae ullamcorper suspendisse.
-          </p>
+          <div className='mt-10 flex flex-col space-y-4'>
+            {people.map((member, index) => (
+              <TeamMember
+                key={index}
+                name={member.name}
+                imageSrc={member.imageUrl}
+                isSelected={selectedMember === member}
+                onClick={() => handleMemberClick(member)}
+              />
+            ))}
+          </div>
+        </div>
+        <div className='flex-1 ml-8 mt-[3.8rem] max-w-2xl'>
+          <TeamDescription
+            name={selectedMember.name}
+            role={selectedMember.role}
+            description={selectedMember.description}
+          />
         </div>
         <ul
           role='list'
           className='grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2'
         >
-          {people.map((person) => (
+          {/* {people.map((person) => (
             <li key={person.name}>
-              <div
-                data-aos='fade-down'
-                className='flex items-center flex-col bg-[#fcfafa]  bg-opacity-50 p-6 rounded-lg shadow-md h-[32rem]'
-              >
-                <img
-                  className='h-24 w-24 rounded-full'
-                  src={person.imageUrl}
-                  alt=''
+              <div data-aos='fade-down'>
+                <LeadershipCard
+                  name={person.name}
+                  role={person.role}
+                  imageSrc={person.imageUrl}
+                  description={person.description}
                 />
-                <div>
-                  <h3 className='text-base text-center font-semibold leading-7 tracking-tight text-gray-900'>
-                    {person.name}
-                  </h3>
-                  <p className='text-sm font-semibold leading-6 text-[#FF0000] text-center'>
-                    {person.role}
-                  </p>
-                  <p className=' text-xs md:text-sm text-justify mt-4'>
-                    {person.visible ? person.description : ""}
-                  </p>
-                </div>
               </div>
             </li>
-          ))}
+          ))} */}
         </ul>
       </div>
     </div>

@@ -55,7 +55,7 @@ function LogisticAboutSection() {
               <p className='text-base font-semibold leading-7 text-[#333333]'>
                 South2South
               </p>
-              <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+              <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Logistic
               </h1>
               <p className='mt-6 text-xl leading-8 text-gray-700'>
@@ -63,16 +63,21 @@ function LogisticAboutSection() {
                 efficiency, reliability, and cost-effectiveness, South2South
                 serves as the trusted bridge for logistics companies seeking to
                 optimise their operations.
+                <br />
+                <br />
+                Our specialty lies in uniting logistics providers with suppliers
+                in Latin America, creating a powerful alliance that thrives on
+                collaboration and shared expertise.
               </p>
             </div>
           </div>
         </div>
         <div
           data-aos='fade-left'
-          className='-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+          className='-ml-12   lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
         >
           <img
-            className='w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]'
+            className='w-[47rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 '
             src='/Photography/Logistic/logisticMain.jpeg'
             alt=''
           />
@@ -83,11 +88,7 @@ function LogisticAboutSection() {
               data-aos='fade-right'
               className='max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg'
             >
-              <p>
-                Our specialty lies in uniting logistics providers with suppliers
-                in Latin America, creating a powerful alliance that thrives on
-                collaboration and shared expertise.
-              </p>
+              <p></p>
               {/* <ul role='list' className='mt-8 space-y-8 text-gray-600'>
                 <li className='flex gap-x-3'>
                   <CloudArrowUpIcon

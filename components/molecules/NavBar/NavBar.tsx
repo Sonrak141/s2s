@@ -9,10 +9,7 @@ function NavBar({ aboutDrop, businessDrop }: any) {
       <div className='flex justify-between'>
         <AboutUsDropdown toggleDropdown={aboutDrop} />
         <NavDropdown toggleDropdown={businessDrop} />
-        <Link
-          href='/contactus'
-          className='text-sm ml-7 md:mt-[0.33rem]  hover:text-red-500'
-        >
+        <Link href='/contactus' className='text-lg ml-7   hover:text-[#940000]'>
           Contact Us
         </Link>
       </div>

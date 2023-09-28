@@ -44,11 +44,11 @@ const page = () => {
       <MobileNav />
       <HeaderBar active={true} />
       <div className=' relative'>
-        <h2 className='absolute top-[55rem] left-10 text-white font-bold text-6xl'>
-          About Us
+        <h2 className='absolute top-[37rem] left-10 text-white font-bold text-6xl'>
+          Who we are
         </h2>
-        <video autoPlay loop muted className='w-full h-screen object-cover'>
-          <source src='/Video/Bogota.mov' type='video/mp4' />
+        <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
+          <source src='/Video/Desert.mov' type='video/mp4' />
         </video>
       </div>
       <div className='' id='whoweare'>
@@ -58,8 +58,13 @@ const page = () => {
         <div id='vision' className=' md:max-w-[40%]'>
           <div className='bg-white py-24 sm:py-32'>
             <div className=''>
-              <div data-aos='fade-down' className=' text-center'>
-                <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
+              <div data-aos='fade-right' className=' text-center'>
+                <img
+                  src='/Photography/WhoWeAre/flechaVision.png'
+                  alt='south2southVision'
+                  className='mb-10'
+                />
+                <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Vision
                 </p>
                 <p className='mt-4 text- leading-8 text-[#161616]'>
@@ -77,18 +82,22 @@ const page = () => {
         <div id='mission' className=' md:max-w-[40%]'>
           <div className='bg-white py-24 sm:py-32'>
             <div className='mx-auto'>
-              <div data-aos='fade-up' className='mx-auto  text-center'>
-                <p className='mt-2 text-3xl font-bold tracking-tight text-[#FF0000] sm:text-4xl'>
-                  Mision
+              <div data-aos='fade-left' className='mx-auto  text-center'>
+                <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+                  Mission
                 </p>
                 <p className=' mt-4 text-md leading-8 text-[#161616]'>
                   To establish strategic alliances with Latin American companies
                   and serve as their trusted commercial representatives in the
-                  MENA & SEA regions. <br />
-                  Our core focus is acting as a catalyst in key economic
-                  sectors, facilitating growth opportunities, and creating
-                  valuable synergies for all stakeholders involved.
+                  MENA & SEA regions. Our core focus is acting as a catalyst in
+                  key economic sectors, facilitating growth opportunities, and
+                  creating valuable synergies for all stakeholders involved.
                 </p>
+                <img
+                  src='/Photography/WhoWeAre/flechaMission.png'
+                  alt='south2southVision'
+                  className='mt-10'
+                />
               </div>
             </div>
           </div>
