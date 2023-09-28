@@ -18,7 +18,7 @@ function page() {
           What we do
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
-          <source src='/Video/Desert.mov' type='video/mp4' />
+          <source src='/Video/city.mp4' type='video/mp4' />
         </video>
       </div>
       <div className=''>
