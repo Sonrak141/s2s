@@ -40,7 +40,7 @@ const page = () => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <div className=''>
       <MobileNav />
       <HeaderBar active={true} />
       <div className=' relative'>
@@ -48,13 +48,13 @@ const page = () => {
           Who we are
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
-          <source src='/Video/Desert.mov' type='video/mp4' />
+          <source src='/Video/Desert.mp4' type='video/mp4' />
         </video>
       </div>
       <div className='' id='whoweare'>
         <AboutUsSection />
       </div>
-      <div className='flex flex-col md:flex-row mx-auto md:mx-10 md:justify-around'>
+      <div className='flex flex-col md:flex-row mx-auto -mt-32 md:mx-10 md:justify-around w-[90%]'>
         <div id='vision' className=' md:max-w-[40%]'>
           <div className='bg-white py-24 sm:py-32'>
             <div className=''>
@@ -67,7 +67,7 @@ const page = () => {
                 <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Vision
                 </p>
-                <p className='mt-4 text- leading-8 text-[#161616]'>
+                <p className='mt-4 text-lg leading-8 text-[#161616]'>
                   We strive for our investments to deliver sustainable financial
                   returns and to be pioneers in creating strategic partnerships
                   for technology transfer among companies, organisations, and
@@ -86,7 +86,7 @@ const page = () => {
                 <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Mission
                 </p>
-                <p className=' mt-4 text-md leading-8 text-[#161616]'>
+                <p className=' mt-4 text-lg leading-8 text-[#161616]'>
                   To establish strategic alliances with Latin American companies
                   and serve as their trusted commercial representatives in the
                   MENA & SEA regions. Our core focus is acting as a catalyst in

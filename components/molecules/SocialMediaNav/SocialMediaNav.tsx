@@ -12,7 +12,10 @@ function SocialMediaNav() {
       >
         <BsLinkedin />
       </Link>
-      <Link href='https://instagram.com' target='blank'>
+      <Link
+        href='https://instagram.com/south2southih?igshid=OGQ5ZDc2ODk2ZA=='
+        target='blank'
+      >
         <BsInstagram />
       </Link>
     </div>

@@ -24,12 +24,12 @@ function page() {
       <div className=''>
         <div data-aos='fade-right' id='strategy'>
           <div className='py-24 sm:py-32'>
-            <div className='mx-auto flex flex-row  px-6 lg:px-8'>
-              <div className='mx-auto max-w-2xl lg:mx-0'>
-                <h2 className='text-4xl font-bold tracking-tight text-[#940000] sm:text-6xl'>
+            <div className='mx-auto flex flex-col px-6 lg:px-8'>
+              <div className='mx-auto md:max-w-7xl lg:mx-auto'>
+                <h2 className='text-4xl font-bold tracking-tight text-[#940000] sm:text-6xl '>
                   Strategy
                 </h2>
-                <p className='mt-6 text-lg leading-8 text-gray-600'>
+                <p className='mt-6 text-lg leading-8 text-gray-600 '>
                   At S2S, we believe that sustainable growth and success can
                   only be achieved through responsible and ethical business
                   practices. Our commitment to creating positive socio-economic
@@ -38,13 +38,13 @@ function page() {
                 </p>
               </div>
               <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-none'>
-                <dl className=' grid md:mt-20 grid-cols-1 gap-8 md:ml-10 sm:grid-cols-1 lg:grid-cols-1'>
+                <dl className=' grid md:mt-20 grid-cols-1 gap-8 md:ml-10 sm:grid-cols-3 lg:grid-cols-3'>
                   {stats.map((stat) => (
-                    <div key={stat.name} className='flex flex-col'>
+                    <div key={stat.name} className='flex flex-col border-r'>
                       <dt className='text-2xl font-bold leading-7 text-[#940000]'>
                         {stat.name}
                       </dt>
-                      <dd className='text-base   leading-9 tracking-tight text-gray-600'>
+                      <dd className='text-base mt-5  leading-9 tracking-tight text-gray-600 mr-5'>
                         {stat.value}
                       </dd>
                     </div>

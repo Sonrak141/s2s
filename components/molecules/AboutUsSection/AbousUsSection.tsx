@@ -59,11 +59,11 @@ export default function AboutUsSection() {
   }, []);
 
   return (
-    <div className='overflow-hidden bg-white py-14 sm:py-32 md:-mt-20'>
+    <div className='overflow-hidden bg-white py-14 sm:py-32 md:-mt-20 '>
       <div className='mx-auto  lg:max-w-4xl lg:px-8'>
         <div className='mx-auto  grid md:max-w-2xl grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
           <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
-            <div className=' xl:-ml-60'>
+            <div className=' md:mt-20 xl:-ml-60 md:mr-10'>
               <h2 className='text-base font-semibold leading-7 text-[#5d3f3f]'></h2>
               <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 About us
@@ -76,21 +76,6 @@ export default function AboutUsSection() {
                 responsibly create value for our shareholders while contributing
                 to the socio-economic development of nations.
               </p>
-              <dl className='mt-10 max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>
-                <h4 className='text-md font-semibold'>Our Values</h4>
-                {features.map((feature) => (
-                  <div key={feature.name} className='relative pl-9'>
-                    <dt className='inline font-semibold text-gray-900'>
-                      <feature.icon
-                        className='absolute left-1 top-1 h-5 w-5 text-[#940000]'
-                        aria-hidden='true'
-                      />
-                      {feature.name}
-                    </dt>{" "}
-                    <dd className='inline'>{feature.description}</dd>
-                  </div>
-                ))}
-              </dl>
             </div>
           </div>
           <img
@@ -102,6 +87,27 @@ export default function AboutUsSection() {
             height={1442}
           />
         </div>
+      </div>
+      <p className='mt-20 ml-16 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+        Our Values
+      </p>
+      <div className='flex justify-center items-center mt-20'>
+        <dl className=' max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>
+          <div className='grid grid-cols-1 md:grid-cols-2 first-letter max-w-5xl gap-5'>
+            {features.map((feature) => (
+              <div key={feature.name} className='relative pl-9'>
+                <dt className='inline  text-gray-900'>
+                  <feature.icon
+                    className='absolute left-1 top-1 h-5 w-5 text-[#940000]'
+                    aria-hidden='true'
+                  />
+                  <dd className='text-lg'>{feature.name}</dd>
+                </dt>{" "}
+                <dd className='inline text-lg '>{feature.description}</dd>
+              </div>
+            ))}
+          </div>
+        </dl>
       </div>
     </div>
   );

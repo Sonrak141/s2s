@@ -25,7 +25,8 @@ function Footer() {
             </p>
           </div>
           <p className='ml-6'>
-            26 Al Abjar Street, Abu Dhabi, Abu Dhabi, Abu Dhabi Emirate
+            Al Sarab Tower, ADGM Square, Al Maryah Island, Abu Dhabi, United
+            Arab Emirates
           </p>
           <div className='flex flex-row items-center'>
             <PhoneIcon className='w-4 h-4 mr-2 text-[#940000]' />
@@ -33,7 +34,7 @@ function Footer() {
               <strong>Phone</strong>
             </p>
           </div>
-          <p className='ml-6'>+971(4)824424</p>
+          <p className='ml-6'>+971509139069</p>
           <div className='flex flex-row items-center'>
             <EnvelopeIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
@@ -61,19 +62,17 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div className=' w-1/4'>
-          <div className='flex flex-col'>
-            <Link className='text-gray-500 mb-7 text-sm' href='/'>
-              Privacy Policy
-            </Link>
-            <Link className='text-gray-500 mb-7 text-sm' href='/'>
-              Terms of Use
-            </Link>
-            <p className='text-gray-500 text-sm'>
-              @2023 South2South All Rights Reserved
-            </p>
-          </div>
-        </div>
+      </div>
+      <div className='flex flex-row md:justify-end mx-24 -mt-5 '>
+        <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
+          Privacy Policy
+        </Link>
+        <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
+          Terms of Use
+        </Link>
+        <p className='text-gray-500 text-xs'>
+          @2023 South2South All Rights Reserved
+        </p>
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ function BackgroundVideo({ videoSource }: any) {
     <div className='absolute inset-1 -z-10'>
       <video
         autoPlay
-        loop
         muted
         className='absolute inset-0 w-full h-screen object-cover'
       >
