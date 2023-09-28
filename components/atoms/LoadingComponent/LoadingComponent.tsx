@@ -11,14 +11,14 @@ function LoadingComponent() {
       <img
         src='/Photography/WhoWeAre/flechaVision.png'
         alt='south2southVision'
-        className='mb-10 w-1/3'
+        className='mb-2 w-1/5'
         data-aos='fade-right'
         data-aos-duration='8000'
       />
       <img
         src='/Photography/WhoWeAre/flechaMission.png'
         alt='south2southVision'
-        className='mb-10 w-1/3'
+        className='mb-10 w-1/5'
         data-aos='fade-left'
         data-aos-duration='8000'
       />

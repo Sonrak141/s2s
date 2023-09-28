@@ -14,7 +14,7 @@ function page() {
       <MobileNav />
       <HeaderBar active={true} />
       <div className='defenceBanner'>
-        <h2 className='absolute top-[37rem] left-10 text-white font-bold text-6xl'>
+        <h2 className='absolute top-[28rem] left-10 text-white font-bold text-6xl'>
           What we do
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>

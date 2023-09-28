@@ -44,7 +44,7 @@ const page = () => {
       <MobileNav />
       <HeaderBar active={true} />
       <div className=' relative'>
-        <h2 className='absolute top-[37rem] left-10 text-white font-bold text-6xl'>
+        <h2 className='absolute top-[28rem] left-10 text-white font-bold text-6xl'>
           Who we are
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
@@ -104,9 +104,9 @@ const page = () => {
         </div>
       </div>
 
-      <div className='py-40' id='teammembers'>
+      {/* <div className='py-40' id='teammembers'>
         <TeamSection />
-      </div>
+      </div> */}
       <Footer />
     </div>
   );

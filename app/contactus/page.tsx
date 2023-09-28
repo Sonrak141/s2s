@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
 import ContactForm from "@/components/molecules/ContactForm/ContactForm";
+import Footer from "@/components/organisms/Footer/Footer";
 
 const contentStyleTitle: React.CSSProperties = {
   height: "130vh",
@@ -28,6 +29,7 @@ function page() {
           <ContactForm />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -60,10 +60,10 @@ export default function AboutUsSection() {
 
   return (
     <div className='overflow-hidden bg-white py-14 sm:py-32 md:-mt-20'>
-      <div className='mx-auto max-w-4xl px-6 lg:px-8'>
-        <div className='mx-auto  grid max-w-2xl grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
+      <div className='mx-auto  lg:max-w-4xl lg:px-8'>
+        <div className='mx-auto  grid md:max-w-2xl grid-cols-1 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2'>
           <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
-            <div className=' md:-ml-60'>
+            <div className=' xl:-ml-60'>
               <h2 className='text-base font-semibold leading-7 text-[#5d3f3f]'></h2>
               <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 About us
@@ -95,7 +95,7 @@ export default function AboutUsSection() {
           </div>
           <img
             data-aos='fade-left'
-            src='/Photography/WhoWeAre/whoWeAre.png'
+            src='/Photography/WhoWeAre/connect.jpeg'
             alt='Product screenshot'
             className='max-w-2xl mt-10  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
             width={2432}
