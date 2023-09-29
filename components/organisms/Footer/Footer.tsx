@@ -9,7 +9,7 @@ function Footer() {
     <div className='flex flex-col text-black-100 mt-5 border-t border-gray-100'>
       <div className='flex max:md:flex-row flex-wrap justify-between items-center gap-5 sm:px-16 px-6'>
         <div className='flex flex-row justify-start items-end'>
-          <Image
+          <img
             src='/S2S_International_Holding/S2SLogos-29.png'
             alt='logo'
             width={180}

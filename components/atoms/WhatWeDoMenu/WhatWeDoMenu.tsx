@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function WhatWeDoMenu() {
   return (
-    <div className='flex md:text-center text-md -mt-8 w-screen md:rounded-md  md:text-black flex-col md:flex-row items-center justify-around'>
+    <div className='flex md:text-center text-md -mt-4 w-screen md:rounded-md  md:text-black flex-col md:flex-row items-center justify-around'>
       <Link
         href='/whatwedo#stretegy'
         className='pt-2 pb-2 ml-40 hover:text-[#940000] px-8 rounded-sm '

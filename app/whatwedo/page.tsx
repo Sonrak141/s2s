@@ -21,9 +21,9 @@ function page() {
           <source src='/Video/city.mp4' type='video/mp4' />
         </video>
       </div>
-      <div className=''>
+      <div className=' w-[90%] mx-auto'>
         <div data-aos='fade-right' id='strategy'>
-          <div className='py-24 sm:py-32'>
+          <div className='sm:py-20'>
             <div className='mx-auto flex flex-col px-6 lg:px-8'>
               <div className='mx-auto md:max-w-7xl lg:mx-auto'>
                 <h2 className='text-4xl font-bold tracking-tight text-[#940000] sm:text-6xl '>

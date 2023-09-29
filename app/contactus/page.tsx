@@ -3,24 +3,18 @@ import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
 import ContactForm from "@/components/molecules/ContactForm/ContactForm";
 import Footer from "@/components/organisms/Footer/Footer";
 
-const contentStyleTitle: React.CSSProperties = {
-  height: "130vh",
-  backgroundImage: 'url("/abuBuilding.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontSize: "40px",
-  display: "flex",
-  alignItems: "end",
-  color: "#fff",
-  fontWeight: "bold",
-};
-
 function page() {
   return (
     <div>
       <HeaderBar active={true} />
       <div className='grid grid-cols-2'>
-        <div style={contentStyleTitle}>
+        <div
+          className='h-[130vh] bg-cover bg-no-repeat flex items-end text-white font-bold relative'
+          style={{
+            backgroundImage: 'url("/abuBuilding.jpg")',
+            fontSize: "40px",
+          }}
+        >
           <h2 className='absolute top-[40rem] left-10 text-white font-bold text-6xl'>
             Contact Us
           </h2>

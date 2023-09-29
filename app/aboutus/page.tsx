@@ -51,7 +51,7 @@ const page = () => {
           <source src='/Video/Desert.mp4' type='video/mp4' />
         </video>
       </div>
-      <div className='' id='whoweare'>
+      <div className='w-[90%] mx-auto' id='whoweare'>
         <AboutUsSection />
       </div>
       <div className='flex flex-col md:flex-row mx-auto -mt-32 md:mx-10 md:justify-around w-[90%]'>
