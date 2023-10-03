@@ -25,7 +25,7 @@ export default function Home() {
     }, 2000);
   }, []);
   return (
-    <main className=''>
+    <main className=' h-screen'>
       {isLoading ? (
         isLoading ? (
           <div

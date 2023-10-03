@@ -44,7 +44,7 @@ const page = () => {
       <MobileNav />
       <HeaderBar active={true} />
       <div className=' relative'>
-        <h2 className='absolute top-[28rem] left-10 text-white font-bold text-6xl'>
+        <h2 className='absolute top-[32rem] md:top-[28rem] left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
           Who we are
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
@@ -80,10 +80,10 @@ const page = () => {
           </div>
         </div>
         <div id='mission' className=' md:max-w-[40%]'>
-          <div className='bg-white py-24 sm:py-32'>
+          <div className='bg-white md:py-24 sm:py-32'>
             <div className='mx-auto'>
               <div data-aos='fade-left' className='mx-auto  text-center'>
-                <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+                <p className='md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Mission
                 </p>
                 <p className=' mt-4 text-lg leading-8 text-[#161616]'>

@@ -91,7 +91,7 @@ export default function AboutUsSection() {
       <p className='mt-20 ml-16 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
         Our Values
       </p>
-      <div className='flex justify-center items-center mt-20'>
+      <div className='flex justify-center items-center mt-8 md:mt-20'>
         <dl className=' max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>
           <div className='grid grid-cols-1 md:grid-cols-2 first-letter max-w-5xl gap-5'>
             {features.map((feature) => (

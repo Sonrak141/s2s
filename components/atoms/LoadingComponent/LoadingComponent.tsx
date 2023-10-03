@@ -11,7 +11,7 @@ function LoadingComponent() {
       <img
         src='/Photography/WhoWeAre/Loading/arrow1.png'
         alt='south2southVision'
-        className='mr-6 mb-2 w-1/5'
+        className='mr-6 mb-1 md:mb-2 w-1/5'
         data-aos='fade-right'
         data-aos-duration='8000'
       />

@@ -16,10 +16,10 @@ function MobileNav() {
   const blur = open ? "backdrop-blur-lg" : "";
   return (
     <div
-      className={`md:hidden w-full p-5 absolute top-0 z-10 bg-black/30 flex flex-col ${blur}`}
+      className={`md:hidden w-full p-5 absolute top-0 z-10 bg-white/60 flex flex-wrap ${blur}`}
     >
       <LogoImg />
-      <button onClick={handleOpen} className='mx-auto text-white text-[30px]'>
+      <button onClick={handleOpen} className='mx-auto  text-[30px]'>
         <GiHamburgerMenu />
       </button>
       {open && (

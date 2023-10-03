@@ -7,18 +7,18 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
 function Footer() {
   return (
     <div className='flex flex-col text-black-100 mt-5 border-t border-gray-100'>
-      <div className='flex max:md:flex-row flex-wrap justify-between items-center gap-5 sm:px-16 px-6'>
-        <div className='flex flex-row justify-start items-end'>
+      <div className='flex max:md:flex-row flex-wrap justify-center md:justify-between items-center md:gap-5 px-6'>
+        <div className='flex flex-row justify-center md:justify-start items-end'>
           <img
             src='/S2S_International_Holding/S2SLogos-29.png'
             alt='logo'
             width={180}
             height={18}
-            className='object-contain -ml-6'
+            className='object-contain md:-ml-6'
           />
         </div>
-        <div className=' md:w-2/4'>
-          <div className='flex flex-row items-center'>
+        <div className='text-center mr-5 md:text-left md:w-2/4'>
+          <div className='flex flex-row items-center justify-center md:justify-start'>
             <MapPinIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Addres</strong>
@@ -28,14 +28,14 @@ function Footer() {
             Al Sarab Tower, ADGM Square, Al Maryah Island, Abu Dhabi, United
             Arab Emirates
           </p>
-          <div className='flex flex-row items-center'>
+          <div className='flex flex-row items-center justify-center md:justify-start'>
             <PhoneIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Phone</strong>
             </p>
           </div>
           <p className='ml-6'>+971509139069</p>
-          <div className='flex flex-row items-center'>
+          <div className='flex flex-row items-center justify-center md:justify-start'>
             <EnvelopeIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Email</strong>
@@ -43,8 +43,8 @@ function Footer() {
           </div>
           <p className='ml-6'>contact@s2sholding.com</p>
         </div>
-        <div className=' w-1/12'>
-          <div className='flex flex-col'>
+        <div className=' w-full md:w-1/12'>
+          <div className='flex flex-col text-center md:text-right md:w-[70%]'>
             <Link href='/aboutus' className='text-sm my-4 hover:text-[#940000]'>
               Who we are
             </Link>
@@ -63,7 +63,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex flex-row md:justify-end mx-24 -mt-5 '>
+      <div className='flex flex-col md:flex-row md:justify-end  w-full text-center md:text-left md:w-[96%] my-10 md:mt-5'>
         <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
           Privacy Policy
         </Link>
