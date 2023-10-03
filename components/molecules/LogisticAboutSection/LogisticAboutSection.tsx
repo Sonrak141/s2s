@@ -9,22 +9,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function LogisticAboutSection() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [screenWidth, setScreenWidth] = useState(769);
 
   const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    // Attach the event listener
-    window.addEventListener("resize", handleResize);
-
-    // Clean up the event listener when the component unmounts
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
   return (
     <div className='relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0'>
