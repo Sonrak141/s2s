@@ -27,18 +27,18 @@ export default function DefenseAboutSection() {
             <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl text-center md:text-left'>
               Defence & Security
             </h1>
-            {screenWidth < mobileThreshold && (
-              <div
-                data-aos='fade-left'
-                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-              >
-                <img
-                  className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                  src='/Photography/Defence/armyDesert.jpeg'
-                  alt='South2SouthDefence'
-                />
-              </div>
-            )}
+
+            <div
+              data-aos='fade-left'
+              className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+            >
+              <img
+                className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                src='/Photography/Defence/armyDesert.jpeg'
+                alt='South2SouthDefence'
+              />
+            </div>
+
             <div className='lg:pr-4'>
               <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
                 South2South Defence & Security represents the commercial
@@ -96,18 +96,17 @@ export default function DefenseAboutSection() {
             </div>
           </div>
         </div>
-        {screenWidth > mobileThreshold && (
-          <div
-            data-aos='fade-left'
-            className='-ml-12 -mt-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-          >
-            <img
-              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-              src='/Photography/Defence/armyDesert.jpeg'
-              alt='South2SouthDefence'
-            />
-          </div>
-        )}
+
+        <div
+          data-aos='fade-left'
+          className='-ml-12 -mt-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+        >
+          <img
+            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+            src='/Photography/Defence/armyDesert.jpeg'
+            alt='South2SouthDefence'
+          />
+        </div>
       </div>
     </div>
   );

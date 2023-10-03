@@ -29,18 +29,18 @@ function HealthcareAboutSection() {
               <h1 className='mt-2 text-3xl font-bold tracking-tight text-center md:text-left text-[#940000] sm:text-4xl'>
                 Healthcare
               </h1>
-              {screenWidth < mobileThreshold && (
-                <div
-                  data-aos='fade-left'
-                  className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-                >
-                  <img
-                    className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                    src='/Photography/Healthcare/healthMain.jpeg'
-                    alt='South2SouthHealthcare'
-                  />
-                </div>
-              )}
+
+              <div
+                data-aos='fade-left'
+                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+              >
+                <img
+                  className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                  src='/Photography/Healthcare/healthMain.jpeg'
+                  alt='South2SouthHealthcare'
+                />
+              </div>
+
               <p className='mt-6 text-xl leading-8 text-gray-700 text-center md:text-left'>
                 South2South Hellthcare, through its subsidiary with over 60
                 laboratories, 6 clinics, and 2 hospitals, focuses on developing
@@ -94,18 +94,17 @@ function HealthcareAboutSection() {
             </div>
           </div>
         </div>
-        {screenWidth > mobileThreshold && (
-          <div
-            data-aos='fade-left'
-            className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-          >
-            <img
-              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-              src='/Photography/Healthcare/healthMain.jpeg'
-              alt='South2SouthHealthcare'
-            />
-          </div>
-        )}
+
+        <div
+          data-aos='fade-left'
+          className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+        >
+          <img
+            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+            src='/Photography/Healthcare/healthMain.jpeg'
+            alt='South2SouthHealthcare'
+          />
+        </div>
       </div>
     </div>
   );

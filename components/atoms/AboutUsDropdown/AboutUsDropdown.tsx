@@ -7,7 +7,7 @@ function AboutUsDropdown({ toggleDropdown }: any) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='text-lg md:my-0 my-4 md:mx-4 ' ref={ref}>
+    <div className='text-lg md:my-0  md:mx-4 ' ref={ref}>
       <button
         type='button'
         onClick={toggleDropdown}

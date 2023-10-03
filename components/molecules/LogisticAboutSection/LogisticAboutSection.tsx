@@ -27,18 +27,18 @@ function LogisticAboutSection() {
               <h1 className='mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Logistic
               </h1>
-              {screenWidth < mobileThreshold && (
-                <div
-                  data-aos='fade-left'
-                  className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-                >
-                  <img
-                    className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                    src='/Photography/Logistic/logisticMainSection.jpeg'
-                    alt='South2SouthLogistic'
-                  />
-                </div>
-              )}
+
+              <div
+                data-aos='fade-left'
+                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+              >
+                <img
+                  className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                  src='/Photography/Logistic/logisticMainSection.jpeg'
+                  alt='South2SouthLogistic'
+                />
+              </div>
+
               <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
                 With a global network and an unwavering commitment to
                 efficiency, reliability, and cost-effectiveness, South2South
@@ -53,18 +53,18 @@ function LogisticAboutSection() {
             </div>
           </div>
         </div>
-        {screenWidth > mobileThreshold && (
-          <div
-            data-aos='fade-left'
-            className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-          >
-            <img
-              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-              src='/Photography/Logistic/logisticMainSection.jpeg'
-              alt='South2SouthLogistic'
-            />
-          </div>
-        )}
+
+        <div
+          data-aos='fade-left'
+          className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+        >
+          <img
+            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+            src='/Photography/Logistic/logisticMainSection.jpeg'
+            alt='South2SouthLogistic'
+          />
+        </div>
+
         <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10'>
           <div className='lg:pr-4'>
             <div

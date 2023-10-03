@@ -28,18 +28,18 @@ function ConstructionAboutSection() {
               <h1 className='mt-2 text-3xl text-center md:text-left font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Construction
               </h1>
-              {screenWidth < mobileThreshold && (
-                <div
-                  data-aos='fade-left'
-                  className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-                >
-                  <img
-                    className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                    src='/Photography/Construction/constructionMain.jpeg'
-                    alt='South2SouthConstruction'
-                  />
-                </div>
-              )}
+
+              <div
+                data-aos='fade-left'
+                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+              >
+                <img
+                  className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                  src='/Photography/Construction/constructionMain.jpeg'
+                  alt='South2SouthConstruction'
+                />
+              </div>
+
               <p className='mt-6 text-xl text-center md:text-left leading-8 text-gray-700'>
                 South2South Real Estate & Construction, through its subsidiary,
                 leverages the rapid growth and ambitious strategic development
@@ -142,18 +142,17 @@ function ConstructionAboutSection() {
             </div>
           </div>
         </div>
-        {screenWidth > mobileThreshold && (
-          <div
-            data-aos='fade-left'
-            className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-          >
-            <img
-              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-              src='/Photography/Construction/constructionMain.jpeg'
-              alt='South2SouthConstruction'
-            />
-          </div>
-        )}
+
+        <div
+          data-aos='fade-left'
+          className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+        >
+          <img
+            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+            src='/Photography/Construction/constructionMain.jpeg'
+            alt='South2SouthConstruction'
+          />
+        </div>
       </div>
     </div>
   );
