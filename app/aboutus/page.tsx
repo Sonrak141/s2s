@@ -44,7 +44,7 @@ const page = () => {
       <MobileNav />
       <HeaderBar active={true} />
       <div className=' relative'>
-        <h2 className='absolute top-[32rem] md:top-[28rem] left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
+        <h2 className='absolute top-[80%] md:top-[28rem] left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
           Who we are
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>

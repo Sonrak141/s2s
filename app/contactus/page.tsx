@@ -22,7 +22,7 @@ function page() {
             fontSize: "40px",
           }}
         >
-          <h2 className='absolute top-[32rem] md:top-[30rem] left-10 text-white font-bold text-6xl'>
+          <h2 className='absolute top-[50%] md:top-[30rem] left-10 text-white font-bold text-6xl'>
             Contact Us
           </h2>
 
@@ -53,7 +53,7 @@ function page() {
             <p className='ml-6 text-sm'>contact@s2sholding.com</p>
           </div>
           <button
-            className=' bg-[#940000] py-2 px-5 rounded-md text-sm absolute top-[36rem] md:top-[43rem] left-10'
+            className=' bg-[#940000] py-2 px-5 rounded-md text-sm absolute top-[80%] md:top-[43rem] left-10'
             onClick={() => setDrawerOpen(!drawerOpen)}
           >
             Send a message to us
