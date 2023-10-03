@@ -1,29 +1,56 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 function ConstructionAboutSection() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
-    <div className=' md:w-[90%] relative isolate overflow-hidden bg-white px-6 py-24 lg:overflow-visible lg:px-0'>
+    <div className=' md:w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 py-24 lg:overflow-visible lg:px-0'>
       <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 border-b'>
         <div className='lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8'>
           <div className='lg:pr-4'>
             <div data-aos='fade-right' className='lg:max-w-lg'>
               <p className='text-base font-semibold text-center md:text-left leading-7 text-[#333333]'>
-                South2South
+                S2S
               </p>
               <h1 className='mt-2 text-3xl text-center md:text-left font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Construction
               </h1>
+              {screenWidth < mobileThreshold && (
+                <div
+                  data-aos='fade-left'
+                  className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+                >
+                  <img
+                    className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                    src='/Photography/Construction/constructionMain.jpeg'
+                    alt='South2SouthConstruction'
+                  />
+                </div>
+              )}
               <p className='mt-6 text-xl text-center md:text-left leading-8 text-gray-700'>
                 South2South Real Estate & Construction, through its subsidiary,
                 leverages the rapid growth and ambitious strategic development
@@ -56,6 +83,7 @@ function ConstructionAboutSection() {
                       </strong>
                     </a>
                   </span>
+                  <ArrowRightCircleIcon className='w-[5%] ml-3 text-[#940000]' />
                 </li>
               </ul>
 
@@ -125,16 +153,18 @@ function ConstructionAboutSection() {
             </div>
           </div>
         </div>
-        <div
-          data-aos='fade-left'
-          className='-ml-12   lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-        >
-          <img
-            className='w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 mb-10 '
-            src='/Photography/Construction/constructionMain.jpeg'
-            alt=''
-          />
-        </div>
+        {screenWidth > mobileThreshold && (
+          <div
+            data-aos='fade-left'
+            className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+          >
+            <img
+              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+              src='/Photography/Construction/constructionMain.jpeg'
+              alt='South2SouthConstruction'
+            />
+          </div>
+        )}
       </div>
     </div>
   );

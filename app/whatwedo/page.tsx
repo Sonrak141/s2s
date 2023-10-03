@@ -22,7 +22,7 @@ function page() {
         </video>
       </div>
       <div className='  mx-auto mt-10 md:mt-0'>
-        <div data-aos='fade-right' id='strategy'>
+        <div id='strategy'>
           <div className='md:py-20 text-center md:text-left'>
             <div className=' w-[90%] mx-auto flex flex-col md:px-6 lg:px-8'>
               <div className='mx-auto md:max-w-7xl lg:mx-auto'>
@@ -41,13 +41,14 @@ function page() {
                 <dl className=' grid md:mt-20 grid-cols-1 md:gap-8  md:grid-cols-3 lg:grid-cols-3'>
                   {stats.map((stat) => (
                     <div
+                      data-aos='fade-right'
                       key={stat.name}
-                      className='flex flex-col border-2 p-5 md:p-0 md:border-r mt-10 md:mt-0'
+                      className='flex flex-col border-2 bg-[#D8D8D5] p-5  md:border-r shadow-lg  mt-10 md:mt-0'
                     >
                       <dt className='text-2xl font-bold leading-7 text-[#940000]'>
                         {stat.name}
                       </dt>
-                      <dd className='text-base mt-5  leading-9 tracking-tight text-gray-600 mr-5'>
+                      <dd className='text-base mt-5 font-bold  leading-9 tracking-tight text-gray-600 mr-5'>
                         {stat.value}
                       </dd>
                     </div>

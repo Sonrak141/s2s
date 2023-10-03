@@ -8,7 +8,7 @@ function NavDropdown({ toggleDropdown }: any) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='text-lg  my-4 md:my-0 md:mx-4 ' ref={ref}>
+    <div className='text-lg md:my-0 md:mx-4 ' ref={ref}>
       <button
         type='button'
         onClick={toggleDropdown}

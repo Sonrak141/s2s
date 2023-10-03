@@ -40,9 +40,15 @@ export default function Home() {
         <div>
           <MobileNav />
           <HeaderBar active={true} />
-          <BackgroundVideo videoSource='/Video/World.mp4' />
+          <video
+            autoPlay
+            muted
+            className='absolute inset-0 w-full h-screen object-cover -z-10'
+          >
+            <source src='/Video/worldVidNoText.mp4' type='video/mp4' />
+          </video>
           <div className='h-screen flex '>
-            <h1 className='md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold mt-[28rem] md:mt-[40rem]'>
+            <h1 className='md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold mt-[36rem] md:mt-[40rem] '>
               Embracing diversity. Inspiring growth.
             </h1>
           </div>

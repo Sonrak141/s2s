@@ -45,18 +45,21 @@ function Footer() {
         </div>
         <div className=' w-full md:w-1/12'>
           <div className='flex flex-col text-center md:text-right md:w-[70%]'>
-            <Link href='/aboutus' className='text-sm my-4 hover:text-[#940000]'>
+            <Link
+              href='/aboutus'
+              className='text-sm text-gray-500 my-4 hover:text-[#940000]'
+            >
               Who we are
             </Link>
             <Link
               href='/whatwedo'
-              className='text-sm my-4 hover:text-[#940000]'
+              className='text-sm my-4 text-gray-500 hover:text-[#940000]'
             >
               What we do
             </Link>
             <Link
               href='/contactus'
-              className='text-sm my-4 hover:text-[#940000]'
+              className='text-sm my-4 text-gray-500 hover:text-[#940000]'
             >
               Contac Us
             </Link>

@@ -80,7 +80,7 @@ const page = () => {
           </div>
         </div>
         <div id='mission' className=' md:max-w-[40%]'>
-          <div className='bg-white md:py-24 sm:py-32'>
+          <div className='bg-white md:py-24 -mt-10 md:mt-0'>
             <div className='mx-auto'>
               <div data-aos='fade-left' className='mx-auto  text-center'>
                 <p className='md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>

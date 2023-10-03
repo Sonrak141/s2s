@@ -11,7 +11,7 @@ export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className='isolate bg-white px-6 py-24 sm:py-32 lg:px-8'>
+    <div className='isolate bg-white px-6 py-10 border-2 md:py-24 sm:py-32 lg:px-8'>
       <div
         className='absolute  inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[10rem]'
         aria-hidden='true'
@@ -28,9 +28,6 @@ export default function ContactForm() {
         <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
           Get More Information
         </h2>
-        <p className='mt-2 text-lg leading-8 text-gray-600'>
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
-        </p>
       </div>
       <form
         action='#'

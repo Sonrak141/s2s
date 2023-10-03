@@ -6,7 +6,7 @@ function BackgroundVideo({ videoSource }: any) {
       <video
         autoPlay
         muted
-        className='absolute inset-0 w-full h-screen object-cover'
+        className='absolute inset-0 w-full h-screen object-cover '
       >
         <source src={videoSource} type='video/mp4' />
         {/* Agrega más fuentes de video si es necesario (por ejemplo, formatos WebM, Ogg, etc.) */}

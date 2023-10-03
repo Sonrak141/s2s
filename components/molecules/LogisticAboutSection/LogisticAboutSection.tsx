@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import {
   CloudArrowUpIcon,
   LockClosedIcon,
@@ -9,8 +9,22 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 function LogisticAboutSection() {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    // Attach the event listener
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
     <div className='relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0'>
@@ -19,11 +33,23 @@ function LogisticAboutSection() {
           <div className='lg:pr-4'>
             <div data-aos='fade-right' className='lg:max-w-lg'>
               <p className='text-base text-center md:text-left font-semibold leading-7 text-[#333333]'>
-                South2South
+                S2S
               </p>
               <h1 className='mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 Logistic
               </h1>
+              {screenWidth < mobileThreshold && (
+                <div
+                  data-aos='fade-left'
+                  className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+                >
+                  <img
+                    className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+                    src='/Photography/Logistic/logisticMainSection.jpeg'
+                    alt='South2SouthLogistic'
+                  />
+                </div>
+              )}
               <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
                 With a global network and an unwavering commitment to
                 efficiency, reliability, and cost-effectiveness, South2South
@@ -38,17 +64,19 @@ function LogisticAboutSection() {
             </div>
           </div>
         </div>
-        <div
-          data-aos='fade-left'
-          className='-ml-12   lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
-        >
-          <img
-            className='w-[47rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 mb-10'
-            src='/Photography/Logistic/logisticMainSection.jpeg'
-            alt=''
-          />
-        </div>
-        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 mb-10'>
+        {screenWidth > mobileThreshold && (
+          <div
+            data-aos='fade-left'
+            className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden'
+          >
+            <img
+              className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+              src='/Photography/Logistic/logisticMainSection.jpeg'
+              alt='South2SouthLogistic'
+            />
+          </div>
+        )}
+        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10'>
           <div className='lg:pr-4'>
             <div
               data-aos='fade-right'
