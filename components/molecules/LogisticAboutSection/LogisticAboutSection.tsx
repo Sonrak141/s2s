@@ -4,6 +4,7 @@ import {
   CloudArrowUpIcon,
   LockClosedIcon,
   ServerIcon,
+  ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,6 +51,47 @@ function LogisticAboutSection() {
                 in Latin America, creating a powerful alliance that thrives on
                 collaboration and shared expertise.
               </p>
+            </div>
+          </div>
+        </div>
+        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8'>
+          <div className='lg:pr-4'>
+            <div
+              data-aos='fade-right'
+              className='max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg'
+            >
+              <p></p>
+
+              <ul
+                data-aos='fade-right'
+                role='list'
+                className='space-y-8 text-gray-600'
+              >
+                <h3 className='font-bold text-[#940000] -mb-8'>Subsidiaries</h3>
+                <li className='flex gap-x-3'>
+                  <span>
+                    <strong className='font-semibold text-gray-900 '>
+                      S2S logistics
+                    </strong>{" "}
+                  </span>
+                  <ArrowRightCircleIcon className='w-[5%] ml-3 text-[#940000]' />
+                </li>
+              </ul>
+
+              {/* <h2
+                data-aos='fade-right'
+                className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
+              >
+                No server? No problem.
+              </h2>
+              <p data-aos='fade-right' className='mt-6'>
+                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
+                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
+                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
+                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
+                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
+                turpis ipsum eu a sed convallis diam.
+              </p> */}
             </div>
           </div>
         </div>

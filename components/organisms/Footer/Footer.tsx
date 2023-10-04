@@ -21,7 +21,7 @@ function Footer() {
           <div className='flex flex-row items-center justify-center md:justify-start'>
             <MapPinIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
-              <strong>Addres</strong>
+              <strong>Address</strong>
             </p>
           </div>
           <p className='ml-6'>
@@ -66,9 +66,9 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row md:justify-end  w-full text-center md:text-left md:w-[96%] my-10 md:mt-5'>
+      <div className='flex flex-col md:flex-row md:justify-end  w-full text-center md:text-left md:w-[96%] my-5 md:mt-5'>
         <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
-          Privacy Policy
+          Privacy | Policy
         </Link>
         <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
           Terms of Use

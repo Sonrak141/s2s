@@ -37,7 +37,7 @@ export default function Home() {
           <div className='loading absolute top-0 left-0 w-full h-full bg-black opacity-100 fade-out'></div>
         )
       ) : (
-        <div>
+        <div className='h-screen'>
           <MobileNav />
           <HeaderBar active={true} />
           <video
@@ -48,7 +48,7 @@ export default function Home() {
             <source src='/Video/worldVidNoText.mp4' type='video/mp4' />
           </video>
           <div className='h-screen flex '>
-            <h1 className='md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold mt-[36rem] md:mt-[40rem] '>
+            <h1 className='md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold mt-[120%] md:mt-[40rem] '>
               Embracing diversity. Inspiring growth.
             </h1>
           </div>
