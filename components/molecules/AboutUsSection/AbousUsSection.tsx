@@ -65,9 +65,9 @@ export default function AboutUsSection() {
           <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
             <div className=' md:mt-20 xl:-ml-60 md:mr-10'>
               <h2 className='text-base font-semibold leading-7 text-[#5d3f3f]'></h2>
-              <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+              <h2 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 About us
-              </p>
+              </h2>
               <p className='mt-6 text-lg leading-8 text-[#161616]'>
                 Based in Abu Dhabi and supported by High Net Worth Individuals
                 (HNWIs), at South2South we have built a robust business model
@@ -88,9 +88,9 @@ export default function AboutUsSection() {
           />
         </div>
       </div>
-      <p className='mt-20 ml-16 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+      <h2 className='mt-20 ml-16 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
         Our Values
-      </p>
+      </h2>
       <div className='flex justify-center items-center mt-8 md:mt-20'>
         <dl className=' max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>
           <div className='grid grid-cols-1 md:grid-cols-2 first-letter max-w-5xl gap-5'>

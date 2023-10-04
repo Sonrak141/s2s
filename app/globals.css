@@ -12,6 +12,10 @@ body {
   font-family: "Matter", sans-serif !important;
   margin: 0;
 }
+p,
+dd {
+  font-size: 16px !important;
+}
 
 /* Normalize */
 

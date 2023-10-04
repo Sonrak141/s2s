@@ -18,7 +18,7 @@ function Footer() {
           />
         </div>
         <div className='text-center mr-5 md:text-left md:w-2/4'>
-          <div className='flex flex-row items-center justify-center md:justify-start'>
+          <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <MapPinIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Address</strong>
@@ -28,14 +28,14 @@ function Footer() {
             Al Sarab Tower, ADGM Square, Al Maryah Island, Abu Dhabi, United
             Arab Emirates
           </p>
-          <div className='flex flex-row items-center justify-center md:justify-start'>
+          <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <PhoneIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Phone</strong>
             </p>
           </div>
           <p className='ml-6'>+971509139069</p>
-          <div className='flex flex-row items-center justify-center md:justify-start'>
+          <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <EnvelopeIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
               <strong>Email</strong>
@@ -73,9 +73,9 @@ function Footer() {
         <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
           Terms of Use
         </Link>
-        <p className='text-gray-500 text-xs'>
+        <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
           @2023 South2South All Rights Reserved
-        </p>
+        </Link>
       </div>
     </div>
   );

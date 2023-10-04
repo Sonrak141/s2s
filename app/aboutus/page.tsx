@@ -64,9 +64,9 @@ const page = () => {
                   alt='south2southVision'
                   className='mb-10'
                 />
-                <p className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+                <h2 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Vision
-                </p>
+                </h2>
                 <p className='mt-4 text-lg leading-8 text-[#161616]'>
                   We strive for our investments to deliver sustainable financial
                   returns and to be pioneers in creating strategic partnerships
@@ -83,9 +83,9 @@ const page = () => {
           <div className='bg-white md:py-24 -mt-10 md:mt-0'>
             <div className='mx-auto'>
               <div data-aos='fade-left' className='mx-auto  text-center'>
-                <p className='md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+                <h2 className='md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                   Mission
-                </p>
+                </h2>
                 <p className=' mt-4 text-lg leading-8 text-[#161616]'>
                   To establish strategic alliances with Latin American companies
                   and serve as their trusted commercial representatives in the

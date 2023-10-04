@@ -48,7 +48,7 @@ function page() {
                       <dt className='text-2xl font-bold leading-7 text-[#940000]'>
                         {stat.name}
                       </dt>
-                      <dd className='text-base mt-5 font-bold  leading-9 tracking-tight text-gray-600 mr-5'>
+                      <dd className='text-base mt-5 font-bold text-[16px]  leading-9 tracking-tight text-gray-600 mr-5'>
                         {stat.value}
                       </dd>
                     </div>
