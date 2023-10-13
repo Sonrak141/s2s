@@ -60,10 +60,10 @@ export default function AboutUsSection() {
 
   return (
     <div className='overflow-hidden bg-white py-14 sm:py-32 md:-mt-20 '>
-      <div className='mx-auto  lg:max-w-3xl lg:px-8'>
-        <div className='mx-auto  grid  grid-cols-1 gap-y-16 sm:gap-y-20  lg:grid-cols-2'>
+      <div className='mx-auto'>
+        <div className='mx-auto  grid  grid-cols-1  md:grid-cols-2'>
           <div data-aos='fade-right' className='lg:pr-8 lg:pt-4'>
-            <div className=' md:mt-20 xl:-ml-60 md:mr-10'>
+            <div className=' md:mt-20'>
               <h2 className='text-base font-semibold leading-7 text-[#5d3f3f]'></h2>
               <h2 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
                 About us

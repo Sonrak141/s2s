@@ -43,7 +43,7 @@ function Footer() {
           </div>
           <p className='ml-6'>contact@s2sholding.com</p>
         </div>
-        <div className=' w-full md:w-1/12'>
+        <div className=' w-full md:w-1/6'>
           <div className='flex flex-col text-center md:text-right md:w-[70%]'>
             <Link
               href='/aboutus'

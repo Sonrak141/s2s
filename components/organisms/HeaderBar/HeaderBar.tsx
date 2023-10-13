@@ -46,8 +46,8 @@ function HeaderBar({ active }: HeaderBarProps) {
   }, [aboutDrop, businessDrop]);
   return (
     <div>
-      <div className='md:flex flex-col hidden items-center justify-between w-full py-1 px-2 fixed z-10 bg-white/60 '>
-        <div className='flex flex-row items-center justify-between w-full py-1 px-2'>
+      <div className='md:flex flex-col hidden items-center justify-between w-full  px-2 fixed z-10 bg-white/60 '>
+        <div className='flex flex-row items-center justify-between w-full  px-2'>
           <div>
             <LogoImg />
           </div>

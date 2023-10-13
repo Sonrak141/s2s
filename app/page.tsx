@@ -25,7 +25,7 @@ export default function Home() {
     }, 2000);
   }, []);
   return (
-    <main className=' h-screen'>
+    <main className=" h-screen">
       {isLoading ? (
         isLoading ? (
           <div
@@ -34,21 +34,21 @@ export default function Home() {
             <LoadingComponent />
           </div>
         ) : (
-          <div className='loading absolute top-0 left-0 w-full h-full bg-black opacity-100 fade-out'></div>
+          <div className="loading absolute top-0 left-0 w-full h-full bg-black opacity-100 fade-out"></div>
         )
       ) : (
-        <div className='h-screen'>
+        <div className="h-screen relative">
           <MobileNav />
           <HeaderBar active={true} />
           <video
             autoPlay
             muted
-            className='absolute inset-0 w-full h-screen object-cover -z-10'
+            className="absolute inset-0 w-full h-screen object-cover -z-10"
           >
-            <source src='/Video/worldVidNoText.mp4' type='video/mp4' />
+            <source src="/Video/worldVidNoText.mp4" type="video/mp4" />
           </video>
-          <div className='h-screen flex '>
-            <h1 className='md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold mt-[120%] md:mt-[40rem] '>
+          <div className="h-screen flex ">
+            <h1 className=" absolute top-[60%] md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold ">
               Embracing diversity. Inspiring growth.
             </h1>
           </div>

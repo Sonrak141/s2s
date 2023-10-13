@@ -10,11 +10,17 @@
 
 body {
   font-family: "Matter", sans-serif !important;
-  margin: 0;
 }
 p,
 dd {
   font-size: 16px !important;
+}
+
+@media (max-width: 768px) {
+  p,
+  dd {
+    font-size: 12px !important;
+  }
 }
 
 /* Normalize */

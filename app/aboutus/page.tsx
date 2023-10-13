@@ -12,62 +12,40 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Footer from "@/components/organisms/Footer/Footer";
 
-const contentStyleTitle: React.CSSProperties = {
-  height: "80vh",
-  // backgroundImage: 'url("/abuAerial.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontSize: "40px",
-  display: "flex",
-  alignItems: "end",
-  color: "#fff",
-  fontWeight: "bold",
-};
-const contentStyleTitle2: React.CSSProperties = {
-  height: "80vh",
-  backgroundImage: 'url("/penon.jpg")',
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  fontSize: "40px",
-  display: "flex",
-  alignItems: "end",
-  color: "#fff",
-  fontWeight: "bold",
-  margin: "0 10rem 10rem 10rem",
-};
 const page = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div className=''>
+    <div className="">
       <MobileNav />
       <HeaderBar active={true} />
-      <div className=' relative'>
-        <h2 className='absolute top-[80%] md:top-[28rem] left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
+      <div className=" relative h-[60vh]">
+        <h2 className="absolute top-[80%]  left-5 md:left-10 text-white font-bold text-5xl md:text-6xl">
           Who we are
         </h2>
-        <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
-          <source src='/Video/Desert.mp4' type='video/mp4' />
+        <video autoPlay loop muted className="w-full h-[70vh] object-cover">
+          <source src="/Video/Desert.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className='w-[90%] mx-auto' id='whoweare'>
+      <div className="w-[90%] mx-auto mt-10" id="whoweare">
         <AboutUsSection />
       </div>
-      <div className='flex flex-col md:flex-row mx-auto -mt-32 md:mx-10 md:justify-around w-[90%]'>
-        <div id='vision' className=' md:max-w-[40%]'>
-          <div className='bg-white py-24 sm:py-32'>
-            <div className=''>
-              <div data-aos='fade-right' className=' text-center'>
-                <img
-                  src='/Photography/WhoWeAre/flechaVision.png'
-                  alt='south2southVision'
-                  className='mb-10'
-                />
-                <h2 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:flex-row mx-auto  md:mx-10 md:justify-around w-[90%] mb-20">
+        <img
+          src="/Photography/WhoWeAre/flechaVision.png"
+          alt="south2southVision"
+          className="mx-auto w-[80%] bottom"
+          data-aos="fade-right"
+        />
+        <div id="vision" className=" ">
+          <div className="bg-white py-10 md:py-24">
+            <div className="">
+              <div data-aos="fade-right" className=" text-center">
+                <h2 className="md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
                   Vision
                 </h2>
-                <p className='mt-4 text-lg leading-8 text-[#161616]'>
+                <p className=" text-lg leading-8 text-[#161616] md:w-[70%] mx-auto">
                   We strive for our investments to deliver sustainable financial
                   returns and to be pioneers in creating strategic partnerships
                   for technology transfer among companies, organisations, and
@@ -79,29 +57,30 @@ const page = () => {
             </div>
           </div>
         </div>
-        <div id='mission' className=' md:max-w-[40%]'>
-          <div className='bg-white md:py-24 -mt-10 md:mt-0'>
-            <div className='mx-auto'>
-              <div data-aos='fade-left' className='mx-auto  text-center'>
-                <h2 className='md:mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
+        <div id="mission" className="mb-20">
+          <div className="bg-white  py-10 md:py-0">
+            <div className="mx-auto">
+              <div data-aos="fade-left" className="mx-auto  text-center">
+                <h2 className=" text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
                   Mission
                 </h2>
-                <p className=' mt-4 text-lg leading-8 text-[#161616]'>
+                <p className="  text-lg leading-8 text-[#161616] md:w-[60%] mx-auto">
                   To establish strategic alliances with Latin American companies
                   and serve as their trusted commercial representatives in the
                   MENA & SEA regions. Our core focus is acting as a catalyst in
                   key economic sectors, facilitating growth opportunities, and
                   creating valuable synergies for all stakeholders involved.
                 </p>
-                <img
-                  src='/Photography/WhoWeAre/flechaMission.png'
-                  alt='south2southVision'
-                  className='mt-10'
-                />
               </div>
             </div>
           </div>
         </div>
+        <img
+          data-aos="fade-left"
+          src="/Photography/WhoWeAre/flechaMission.png"
+          alt="south2southVision"
+          className="mx-auto w-[80%]"
+        />
       </div>
 
       {/* <div className='py-40' id='teammembers'>

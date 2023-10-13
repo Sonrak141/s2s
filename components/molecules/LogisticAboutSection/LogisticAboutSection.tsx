@@ -17,30 +17,30 @@ function LogisticAboutSection() {
     AOS.init();
   }, []);
   return (
-    <div className='relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0'>
-      <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 border-b'>
-        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8'>
-          <div className='lg:pr-4'>
-            <div data-aos='fade-right' className='lg:max-w-lg'>
-              <p className='text-base text-center md:text-left font-semibold leading-7 text-[#333333]'>
+    <div className="md:w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0">
+      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div className="lg:pr-4">
+            <div data-aos="fade-right" className="lg:max-w-lg">
+              <p className="text-base text-center md:text-left font-semibold leading-7 text-[#333333]">
                 S2S
               </p>
-              <h1 className='mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
-                Logistic
+              <h1 className="mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
+                Logistics
               </h1>
 
               <div
-                data-aos='fade-left'
-                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+                data-aos="fade-left"
+                className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden"
               >
                 <img
-                  className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                  src='/Photography/Logistic/logisticMainSection.jpeg'
-                  alt='South2SouthLogistic'
+                  className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
+                  src="/Photography/Logistic/logisticMainSection.jpeg"
+                  alt="South2SouthLogistic"
                 />
               </div>
 
-              <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
+              <p className="mt-6 text-center md:text-left text-xl leading-8 text-gray-700 mr-5">
                 With a global network and an unwavering commitment to
                 efficiency, reliability, and cost-effectiveness, South2South
                 serves as the trusted bridge for logistics companies seeking to
@@ -54,27 +54,27 @@ function LogisticAboutSection() {
             </div>
           </div>
         </div>
-        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8'>
-          <div className='lg:pr-4'>
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+          <div className="lg:pr-4">
             <div
-              data-aos='fade-right'
-              className='max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg'
+              data-aos="fade-right"
+              className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
             >
               <p></p>
 
               <ul
-                data-aos='fade-right'
-                role='list'
-                className='space-y-8 text-gray-600'
+                data-aos="fade-right"
+                role="list"
+                className="space-y-8 text-gray-600"
               >
-                <h3 className='font-bold text-[#940000] -mb-8'>Subsidiaries</h3>
-                <li className='flex gap-x-3'>
+                <h3 className="font-bold text-[#940000] -mb-8">Subsidiaries</h3>
+                <li className="flex gap-x-3">
                   <span>
-                    <strong className='font-semibold text-gray-900 '>
+                    <strong className="font-semibold text-gray-900 ">
                       S2S logistics
                     </strong>{" "}
                   </span>
-                  <ArrowRightCircleIcon className='w-[5%] ml-3 text-[#940000]' />
+                  <ArrowRightCircleIcon className="w-[5%] ml-3 text-[#940000]" />
                 </li>
               </ul>
 
@@ -97,21 +97,21 @@ function LogisticAboutSection() {
         </div>
 
         <div
-          data-aos='fade-left'
-          className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+          data-aos="fade-left"
+          className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block"
         >
           <img
-            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-            src='/Photography/Logistic/logisticMainSection.jpeg'
-            alt='South2SouthLogistic'
+            className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
+            src="/Photography/Logistic/logisticMainSection.jpeg"
+            alt="South2SouthLogistic"
           />
         </div>
 
-        <div className='lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10'>
-          <div className='lg:pr-4'>
+        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10">
+          <div className="lg:pr-4">
             <div
-              data-aos='fade-right'
-              className='max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg'
+              data-aos="fade-right"
+              className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
             >
               <p></p>
               {/* <ul role='list' className='mt-8 space-y-8 text-gray-600'>

@@ -17,7 +17,7 @@ export default function DefenseAboutSection() {
     AOS.init();
   }, []);
   return (
-    <div className='md:w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 py-24 lg:overflow-visible lg:px-0 '>
+    <div className='w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 py-24 lg:overflow-visible lg:px-0 '>
       <div className='mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 border-b'>
         <div className='lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8'>
           <div data-aos='fade-right' className='lg:max-w-lg'>
@@ -39,11 +39,11 @@ export default function DefenseAboutSection() {
               />
             </div>
 
-            <div className='lg:pr-4'>
+            <div className='lg:pr-4 mr-5'>
               <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
                 South2South Defence & Security represents the commercial
                 interests of Latin American defence and security companies in
-                the Middle East, Africa, and South Asia. <br /> <br />
+                the Middle East, Africa, and South Asia. <br />
                 We aim to consolidate the positioning of Latin American
                 companies in the regional market by creating synergies and
                 growth opportunities in the sector. With strategic connections
@@ -99,10 +99,10 @@ export default function DefenseAboutSection() {
 
         <div
           data-aos='fade-left'
-          className='-ml-12 -mt-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
+          className='-ml-12 -mt-12  lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block'
         >
           <img
-            className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
+            className='md:w-[48rem] mt-20 max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
             src='/Photography/Defence/armyDesert.jpeg'
             alt='South2SouthDefence'
           />

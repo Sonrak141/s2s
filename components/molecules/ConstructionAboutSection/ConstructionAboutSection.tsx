@@ -40,7 +40,7 @@ function ConstructionAboutSection() {
                 />
               </div>
 
-              <p className='mt-6 text-xl text-center md:text-left leading-8 text-gray-700'>
+              <p className='mt-6 text-xl text-center md:text-left leading-8 text-gray-700 mr-5'>
                 South2South Real Estate & Construction, through its subsidiary,
                 leverages the rapid growth and ambitious strategic development
                 plans in the Middle East, ensuring strategic alliances and

@@ -12,7 +12,7 @@ function NavDropdown({ toggleDropdown }: any) {
       <button
         type='button'
         onClick={toggleDropdown}
-        className='inline-flex justify-center text-md hover:text-[#940000]'
+        className='inline-flex justify-center text-sm md:text-md hover:text-[#940000]'
         id='dropdown-toggle'
       >
         What We Do

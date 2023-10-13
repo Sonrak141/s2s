@@ -30,7 +30,7 @@ export default function ContactForm() {
         </h2>
       </div>
       <form
-        action='#'
+        action='https://formsubmit.co/contact@s2sholding.com'
         method='POST'
         className='mx-auto mt-16 max-w-xl sm:mt-20'
       >

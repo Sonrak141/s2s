@@ -13,8 +13,8 @@ function page() {
     <div>
       <MobileNav />
       <HeaderBar active={true} />
-      <div className='defenceBanner'>
-        <h2 className='absolute top-[55%] md:top-[28rem] left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
+      <div className='defenceBanner relative h-[60vh]'>
+        <h2 className='absolute top-[80%]  left-5 md:left-10 text-white font-bold text-5xl md:text-6xl'>
           What we do
         </h2>
         <video autoPlay loop muted className='w-full h-[70vh] object-cover'>
@@ -26,7 +26,7 @@ function page() {
           <div className='md:py-20 text-center md:text-left'>
             <div className=' w-[90%] mx-auto flex flex-col md:px-6 lg:px-8'>
               <div className='mx-auto md:max-w-7xl lg:mx-auto'>
-                <h2 className='text-4xl font-bold tracking-tight text-[#940000] md:text-6xl'>
+                <h2 className='text-4xl mt-20 font-bold tracking-tight text-[#940000] md:text-6xl'>
                   Strategy
                 </h2>
                 <p className='mt-6 text-lg leading-8 text-gray-600 '>
@@ -48,7 +48,7 @@ function page() {
                       <dt className='text-2xl font-bold leading-7 text-[#940000]'>
                         {stat.name}
                       </dt>
-                      <dd className='text-base mt-5 font-bold text-[16px]  leading-9 tracking-tight text-gray-600 mr-5'>
+                      <dd className='text-base mt-5 font-bold text-[16px]  leading-9  tracking-tight text-gray-600 mr-5'>
                         {stat.value}
                       </dd>
                     </div>

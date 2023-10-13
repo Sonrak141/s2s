@@ -32,7 +32,7 @@ function HealthcareAboutSection() {
 
               <div
                 data-aos='fade-left'
-                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden'
+                className='-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden '
               >
                 <img
                   className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
@@ -41,7 +41,7 @@ function HealthcareAboutSection() {
                 />
               </div>
 
-              <p className='mt-6 text-xl leading-8 text-gray-700 text-center md:text-left'>
+              <p className='mt-6 text-xl leading-8 text-gray-700 text-center md:text-left mr-5'>
                 South2South Hellthcare, through its subsidiary with over 60
                 laboratories, 6 clinics, and 2 hospitals, focuses on developing
                 alliances with Latin American companies. By transferring
