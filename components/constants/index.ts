@@ -49,3 +49,21 @@ export const stats = [
       "We identify and invest in promising companies and projects, supporting their growth and success.",
   },
 ];
+
+export const statsSpanish = [
+  {
+    name: "Gestión Estratégica:",
+    value:
+        "Gestión estratégica para nuestras subsidiarias existentes en defensa, salud, construcción y logística, fomentando la colaboración y optimizando recursos para garantizar una gobernanza y supervisión efectivas.",
+  },
+  {
+    name: "Expansión de Mercado:",
+    value:
+        "Expansión de mercado y diversificación sectorial para las empresas latinoamericanas de renombre en el Medio Oriente, África y Asia del Sur. Actuamos como sus representantes comerciales de confianza, ayudándoles a navegar y prosperar en nuevos mercados, al mismo tiempo que creamos sinergias en nuestro variado portafolio.",
+  },
+  {
+    name: "Inversiones Empresariales:",
+    value:
+        "Identificamos e invertimos en empresas y proyectos prometedores, apoyando su crecimiento y éxito.",
+  },
+]

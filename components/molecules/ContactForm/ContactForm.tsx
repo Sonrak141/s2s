@@ -1,7 +1,8 @@
 "use client";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
+import languageContext from "@/context/languageContext";
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
@@ -9,7 +10,7 @@ function classNames(...classes: string[]) {
 
 export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
-
+  const {spanish} = useContext(languageContext)
   return (
     <div className='isolate bg-white px-6 py-10 border-2 md:py-24 sm:py-32 lg:px-8'>
       <div
@@ -26,7 +27,7 @@ export default function ContactForm() {
       </div>
       <div className='mx-auto max-w-2xl text-center'>
         <h2 className='text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl'>
-          Get More Information
+          {spanish?"Consigue mas información":"Get More Information"}
         </h2>
       </div>
       <form
@@ -40,7 +41,7 @@ export default function ContactForm() {
               htmlFor='first-name'
               className='block text-sm font-semibold leading-6 text-gray-900'
             >
-              First name
+              {spanish?"Nombre":"First name"}
             </label>
             <div className='mt-2.5'>
               <input
@@ -57,7 +58,7 @@ export default function ContactForm() {
               htmlFor='last-name'
               className='block text-sm font-semibold leading-6 text-gray-900'
             >
-              Last name
+              {spanish?"Apellido":"Last name"}
             </label>
             <div className='mt-2.5'>
               <input
@@ -74,7 +75,7 @@ export default function ContactForm() {
               htmlFor='company'
               className='block text-sm font-semibold leading-6 text-gray-900'
             >
-              Company
+              {spanish?"Empresa":"Company"}
             </label>
             <div className='mt-2.5'>
               <input
@@ -108,7 +109,7 @@ export default function ContactForm() {
               htmlFor='phone-number'
               className='block text-sm font-semibold leading-6 text-gray-900'
             >
-              Phone number
+              {spanish?"Telefono":"Phone number"}
             </label>
             <div className='relative mt-2.5'>
               <div className='absolute inset-y-0 left-0 flex items-center'>
@@ -143,7 +144,7 @@ export default function ContactForm() {
               htmlFor='message'
               className='block text-sm font-semibold leading-6 text-gray-900'
             >
-              Message
+              {spanish?"Mensaje":"Message"}
             </label>
             <div className='mt-2.5'>
               <textarea
@@ -176,7 +177,7 @@ export default function ContactForm() {
               </Switch>
             </div>
             <Switch.Label className='text-sm leading-6 text-gray-600'>
-              By selecting this, you agree to our{" "}
+              {spanish?"Selecionando, aceptas nuetras ":"By selecting this, you agree to our "}
               <a href='#' className='font-semibold text-indigo-600'>
                 privacy&nbsp;policy
               </a>
@@ -189,7 +190,7 @@ export default function ContactForm() {
             type='submit'
             className='block w-full rounded-md bg-[#940000] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-[#5d3f3f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
           >
-            Lets talk
+            {spanish?"Hablemos":"Lets talk"}
           </button>
         </div>
       </form>

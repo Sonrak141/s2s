@@ -1,17 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import languageContext from "@/context/languageContext";
 
 function LogisticAboutSection() {
   const [screenWidth, setScreenWidth] = useState(769);
-
+  const {spanish} = useContext(languageContext)
   const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
@@ -26,7 +24,7 @@ function LogisticAboutSection() {
                 S2S
               </p>
               <h1 className="mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
-                Logistics
+                {spanish? "Logística":"Logistics"}
               </h1>
 
               <div
@@ -41,15 +39,11 @@ function LogisticAboutSection() {
               </div>
 
               <p className="mt-6 text-center md:text-left text-xl leading-8 text-gray-700 mr-5">
-                With a global network and an unwavering commitment to
-                efficiency, reliability, and cost-effectiveness, South2South
-                serves as the trusted bridge for logistics companies seeking to
-                optimise their operations.
-                <br />
-                <br />
-                Our specialty lies in uniting logistics providers with suppliers
-                in Latin America, creating a powerful alliance that thrives on
-                collaboration and shared expertise.
+                {spanish?"Con una red global y un compromiso inquebrantable con la eficiencia, la confiabilidad y la rentabilidad, South2South sirve como el puente de confianza para las empresas de logística que buscan optimizar sus operaciones.\n" +
+                    "Nuestra especialidad radica en unir a proveedores de logística con proveedores en América Latina, creando una poderosa alianza que prospera en la colaboración y el conocimiento compartido.\n":"With a global network and an unwavering commitment to efficiency, reliability, and cost-effectiveness, South2South serves as the trusted bridge for logistics companies seeking to optimise their operations.\n" +
+                    "\n" +
+                    "Our specialty lies in uniting logistics providers with suppliers in Latin America, creating a powerful alliance that thrives on collaboration and shared expertise."}
+
               </p>
             </div>
           </div>
@@ -67,7 +61,7 @@ function LogisticAboutSection() {
                 role="list"
                 className="space-y-8 text-gray-600"
               >
-                <h3 className="font-bold text-[#940000] -mb-8">Subsidiaries</h3>
+                <h3 className="font-bold text-[#940000] -mb-8">{spanish?"Subsidiarias":"Subsidiaries"}</h3>
                 <li className="flex gap-x-3">
                   <span>
                     <strong className="font-semibold text-gray-900 ">

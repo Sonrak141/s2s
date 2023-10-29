@@ -1,10 +1,11 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useContext } from "react";
 import LogoImg from "../../atoms/LogoImg/LogoImg";
 import NavBar from "../../molecules/NavBar/NavBar";
 import SocialMediaNav from "@/components/molecules/SocialMediaNav/SocialMediaNav";
 import WhoWeAreMenu from "@/components/atoms/WhoWeAreMenu/WhoWeAreMenu";
 import WhatWeDoMenu from "@/components/atoms/WhatWeDoMenu/WhatWeDoMenu";
+import languageContext from "@/context/languageContext";
 
 type HeaderBarProps = {
   active: boolean;
@@ -14,6 +15,7 @@ function HeaderBar({ active }: HeaderBarProps) {
   const [aboutDrop, setAboutDrop] = useState(false);
   const [businessDrop, setBusinessDrop] = useState(false);
   const ref: any = useRef();
+  const{spanish, setSpanish} = useContext(languageContext)
   const openAboutDrop = () => {
     if (businessDrop) {
       setBusinessDrop(false);
@@ -61,6 +63,10 @@ function HeaderBar({ active }: HeaderBarProps) {
           </div> */}
           <div className=''>
             <SocialMediaNav />
+          </div>
+          <div>
+            <a className="mr-3 text-xs hover:cursor-pointer" onClick={()=>setSpanish(false)}>EN</a>
+            <a className="text-xs hover:cursor-pointer" onClick={()=>setSpanish(true)}>ES</a>
           </div>
         </div>
         {aboutDrop ? <WhoWeAreMenu /> : ""}

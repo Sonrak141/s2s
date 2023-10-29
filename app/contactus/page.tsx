@@ -1,15 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import HeaderBar from "@/components/organisms/HeaderBar/HeaderBar";
 import ContactForm from "@/components/molecules/ContactForm/ContactForm";
 import Footer from "@/components/organisms/Footer/Footer";
 import MobileNav from "@/components/organisms/MobileNav/MobileNav";
 import Drawer from "@mui/material/Drawer";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import languageContext from "@/context/languageContext";
 
 function page() {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [drawerOpen, setDrawerOpen] = useState(false);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const{spanish} = useContext(languageContext)
   return (
     <div>
       <MobileNav />
@@ -23,24 +26,23 @@ function page() {
           }}
         >
           <h2 className="absolute top-[50%] md:top-[30%] left-10 text-white font-bold text-5xl md:text-6xl">
-            Contact Us
+            {spanish?"Contactanos":"Contact Us"}
           </h2>
 
-          <div className="left-10  absolute md:block top-[60%]  md:top-[38%] mr-5 md:text-left md:w-2/4">
+          <div className="left-10  absolute md:block top-[60%]  md:top-[38%] mr-5 mt-5 md:text-left md:w-2/4">
             <div className="flex flex-row items-center text-sm  md:justify-start my-1">
               <MapPinIcon className="w-4 h-4 mr-2 text-[#940000]" />
               <p>
-                <strong>Address</strong>
+                <strong>{spanish?"Dirección":"Address"}</strong>
               </p>
             </div>
             <p className="ml-6 text-sm">
-              Al Sarab Tower, ADGM Square, Al Maryah Island, Abu Dhabi, United
-              Arab Emirates
+              Addax Tower, Al Reem Island, Abu Dhabi, United Aran Emirates - Office 3910.
             </p>
             <div className="text-sm flex flex-row items-center  md:justify-start my-1">
               <PhoneIcon className="w-4 h-4 mr-2 text-[#940000]" />
               <p>
-                <strong>Phone</strong>
+                <strong>{spanish?"Teléfono":"Phone"}</strong>
               </p>
             </div>
             <p className="ml-6 text-sm">+971509139069</p>
@@ -53,10 +55,10 @@ function page() {
             <p className="ml-6 text-sm">contact@s2sholding.com</p>
           </div>
           <button
-            className=" bg-[#940000] py-2 px-5 rounded-md text-sm absolute top-[90%] md:top-[58%] left-10"
+            className=" bg-[#940000] py-2 px-5 mt-28 lg:mt-10 rounded-md text-sm absolute top-[90%] md:top-[58%] left-10"
             onClick={() => setDrawerOpen(!drawerOpen)}
           >
-            Send a message to us
+            {spanish?"Envianos un mensaje":"Send a message to us"}
           </button>
         </div>
 

@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import { footerLinksCategories } from "@/components/constants";
+import React, {useContext} from "react";
 import Link from "next/link";
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/20/solid";
+import languageContext from "@/context/languageContext";
 
 function Footer() {
+  const {spanish} = useContext(languageContext)
   return (
     <div className='flex flex-col text-black-100 mt-5 border-t border-gray-100'>
       <div className='flex max:md:flex-row flex-wrap justify-center md:justify-between items-center md:gap-5 px-6'>
@@ -21,17 +21,16 @@ function Footer() {
           <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <MapPinIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
-              <strong>Address</strong>
+              <strong>{spanish?"Dirección":"Address"}</strong>
             </p>
           </div>
           <p className='ml-6'>
-            Al Sarab Tower, ADGM Square, Al Maryah Island, Abu Dhabi, United
-            Arab Emirates
+            Addax Tower, Al Reem Island, Abu Dhabi, United Aran Emirates - Office 3910.
           </p>
           <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <PhoneIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
-              <strong>Phone</strong>
+              <strong>{spanish?"Teléfono":"Phone"}</strong>
             </p>
           </div>
           <p className='ml-6'>+971509139069</p>
@@ -49,19 +48,19 @@ function Footer() {
               href='/aboutus'
               className='text-sm text-gray-500 my-4 hover:text-[#940000]'
             >
-              Who we are
+              {spanish?"Quienes somos":"Who we are"}
             </Link>
             <Link
               href='/whatwedo'
               className='text-sm my-4 text-gray-500 hover:text-[#940000]'
             >
-              What we do
+              {spanish?"Que hacemos":"What we do"}
             </Link>
             <Link
               href='/contactus'
               className='text-sm my-4 text-gray-500 hover:text-[#940000]'
             >
-              Contac Us
+              {spanish?"Contactanos":"Contac Us"}
             </Link>
           </div>
         </div>
@@ -74,7 +73,7 @@ function Footer() {
           Terms of Use
         </Link>
         <Link className='text-gray-500 mb-7 mr-3 text-xs' href='/'>
-          @2023 South2South All Rights Reserved
+          {spanish?"@2023 South2South Todos los derechos reservados":"@2023 South2South All Rights Reserved"}
         </Link>
       </div>
     </div>

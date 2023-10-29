@@ -1,11 +1,12 @@
 "use client";
-import Link from "next/link";
-import { document } from "postcss";
-import React, { useState, useRef, useEffect } from "react";
+
+import React, { useState, useRef, useContext } from "react";
+import languageContext from "@/context/languageContext";
 
 function NavDropdown({ toggleDropdown }: any) {
   const ref: any = useRef();
   const [isOpen, setIsOpen] = useState(false);
+  const {spanish} = useContext(languageContext)
 
   return (
     <div className='text-lg md:my-0 md:mx-4 ' ref={ref}>
@@ -15,7 +16,7 @@ function NavDropdown({ toggleDropdown }: any) {
         className='inline-flex justify-center text-sm md:text-md hover:text-[#940000]'
         id='dropdown-toggle'
       >
-        What We Do
+          {spanish? "Que hacemos": "What We Do"}
         <svg
           className='-mr-1 ml-2 h-5 w-5'
           xmlns='http://www.w3.org/2000/svg'

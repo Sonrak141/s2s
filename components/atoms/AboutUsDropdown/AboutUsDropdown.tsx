@@ -1,11 +1,11 @@
 "use client";
-import React, { useState, useEffect, useRef } from "react";
-import Link from "next/link";
+import React, { useState, useEffect, useRef, useContext } from "react";
+import languageContext from "@/context/languageContext";
 
 function AboutUsDropdown({ toggleDropdown }: any) {
   const ref: any = useRef();
   const [isOpen, setIsOpen] = useState(false);
-
+  const {spanish} = useContext(languageContext)
   return (
     <div className='text-lg md:my-0  md:mx-4 ' ref={ref}>
       <button
@@ -14,7 +14,7 @@ function AboutUsDropdown({ toggleDropdown }: any) {
         className='inline-flex justify-center text-sm md:text-md hover:text-[#940000] ease-in'
         id='dropdown'
       >
-        Who We Are
+          {spanish? "Quienes Somos": "Who We Are"}
         <svg
           className='-mr-1 ml-2 h-5 w-5'
           xmlns='http://www.w3.org/2000/svg'

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import Image from "next/image";
 import HeaderBar from "../components/organisms/HeaderBar/HeaderBar";
 import CarouselComp from "../components/organisms/Carousel/CarouselComp";
@@ -9,6 +9,7 @@ import BackgroundVideo from "@/components/atoms/BackgroundVideo/BackgroundVideo"
 import AOS from "aos";
 import "aos/dist/aos.css";
 import LoadingComponent from "@/components/atoms/LoadingComponent/LoadingComponent";
+import languageContext from "@/context/languageContext";
 
 const images = [
   "https://via.placeholder.com/800x400",
@@ -18,6 +19,7 @@ const images = [
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const {spanish} = useContext(languageContext)
   useEffect(() => {
     AOS.init();
     setTimeout(() => {
@@ -43,13 +45,14 @@ export default function Home() {
           <video
             autoPlay
             muted
+            playsInline
             className="absolute inset-0 w-full h-screen object-cover -z-10"
           >
             <source src="/Video/worldVidNoText.mp4" type="video/mp4" />
           </video>
           <div className="h-screen flex ">
             <h1 className=" absolute top-[60%] md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold ">
-              Embracing diversity. Inspiring growth.
+              {spanish? "Abrazando la diversidad. Inspirando el crecimiento.":"Embracing diversity. Inspiring growth."}
             </h1>
           </div>
         </div>

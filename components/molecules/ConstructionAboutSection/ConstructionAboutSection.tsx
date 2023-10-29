@@ -1,17 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import languageContext from "@/context/languageContext";
 
 function ConstructionAboutSection() {
   const [screenWidth, setScreenWidth] = useState(769);
-
+  const {spanish} = useContext(languageContext)
   const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
@@ -26,7 +24,7 @@ function ConstructionAboutSection() {
                 S2S
               </p>
               <h1 className='mt-2 text-3xl text-center md:text-left font-bold tracking-tight text-[#940000] sm:text-4xl'>
-                Construction
+                {spanish?"Construción":"Construction"}
               </h1>
 
               <div
@@ -41,12 +39,8 @@ function ConstructionAboutSection() {
               </div>
 
               <p className='mt-6 text-xl text-center md:text-left leading-8 text-gray-700 mr-5'>
-                South2South Real Estate & Construction, through its subsidiary,
-                leverages the rapid growth and ambitious strategic development
-                plans in the Middle East, ensuring strategic alliances and
-                business opportunities for our Latin American clients. Its
-                subsidiary has delivered over 8,600 units and has 2.5 million
-                square metres under development in Egypt, Morocco, and Jordan.
+                {spanish? "South2South Real Estate & Construction, a través de su subsidiaria, aprovecha el rápido crecimiento y los ambiciosos planes de desarrollo estratégico en Medio Oriente, garantizando alianzas estratégicas y oportunidades comerciales para nuestros clientes latinoamericanos. Su subsidiaria ha entregado más de 8,600 unidades y tiene 2.5 millones de metros cuadrados en desarrollo en Egipto, Marruecos y Jordania.":"South2South Real Estate & Construction, through its subsidiary, leverages the rapid growth and ambitious strategic development plans in the Middle East, ensuring strategic alliances and business opportunities for our Latin American clients. Its subsidiary has delivered over 8,600 units and has 2.5 million square metres under development in Egypt, Morocco, and Jordan."}
+
               </p>
             </div>
           </div>
@@ -63,7 +57,7 @@ function ConstructionAboutSection() {
                 role='list'
                 className=' space-y-8 text-gray-600'
               >
-                <h3 className='font-bold text-[#940000] -mb-8'>Subsidiaries</h3>
+                <h3 className='font-bold text-[#940000] -mb-8'>{spanish?"Subsidiarias":"Subsidiaries"}</h3>
                 <li className='flex gap-x-3'>
                   <span>
                     <a href='https://ad-holding.com/'>

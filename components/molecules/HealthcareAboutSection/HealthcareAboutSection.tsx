@@ -1,18 +1,16 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import languageContext from "@/context/languageContext";
 
 function HealthcareAboutSection() {
   const [screenWidth, setScreenWidth] = useState(769);
-
+  const {spanish} = useContext(languageContext)
   const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
@@ -27,7 +25,7 @@ function HealthcareAboutSection() {
                 S2S
               </p>
               <h1 className='mt-2 text-3xl font-bold tracking-tight text-center md:text-left text-[#940000] sm:text-4xl'>
-                Healthcare
+                {spanish?"Salud":"Healthcare"}
               </h1>
 
               <div
@@ -42,12 +40,7 @@ function HealthcareAboutSection() {
               </div>
 
               <p className='mt-6 text-xl leading-8 text-gray-700 text-center md:text-left mr-5'>
-                South2South Hellthcare, through its subsidiary with over 60
-                laboratories, 6 clinics, and 2 hospitals, focuses on developing
-                alliances with Latin American companies. By transferring
-                sustainable operational models based on high-tech systems, we
-                aim to improve healthcare infrastructure in the MENA region,
-                with an initial focus on primary and secondary care levels.
+                {spanish?"South2South Healthcare, a través de su subsidiaria con más de 60 laboratorios, 6 clínicas y 2 hospitales, se enfoca en desarrollar alianzas con empresas latinoamericanas. Al transferir modelos operativos sostenibles basados en sistemas de alta tecnología, nuestro objetivo es mejorar la infraestructura de atención médica en la región de MENA, con un enfoque inicial en los niveles de atención primaria y secundaria.":"South2South Hellthcare, through its subsidiary with over 60 laboratories, 6 clinics, and 2 hospitals, focuses on developing alliances with Latin American companies. By transferring sustainable operational models based on high-tech systems, we aim to improve healthcare infrastructure in the MENA region, with an initial focus on primary and secondary care levels."}
               </p>
             </div>
           </div>
@@ -66,7 +59,7 @@ function HealthcareAboutSection() {
                 role='list'
                 className='space-y-8 text-gray-600'
               >
-                <h3 className='font-bold text-[#940000] -mb-8'>Subsidiaries</h3>
+                <h3 className='font-bold text-[#940000] -mb-8'>{spanish?"Subsidiarias":"Subsidiaries"}</h3>
                 <li className='flex gap-x-3'>
                   <span>
                     <strong className='font-semibold text-gray-900 '>

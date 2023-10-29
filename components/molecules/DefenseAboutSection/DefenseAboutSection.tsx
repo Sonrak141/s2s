@@ -1,17 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
   ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import languageContext from "@/context/languageContext";
 
 export default function DefenseAboutSection() {
   const [screenWidth, setScreenWidth] = useState(769);
-
+  const{spanish} = useContext(languageContext)
   const mobileThreshold = 768;
   useEffect(() => {
     AOS.init();
@@ -25,7 +23,7 @@ export default function DefenseAboutSection() {
               S2S
             </p>
             <h1 className='mt-2 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl text-center md:text-left'>
-              Defence & Security
+              {spanish?"Defensa y Seguridad":"Defence & Security"}
             </h1>
 
             <div
@@ -41,15 +39,9 @@ export default function DefenseAboutSection() {
 
             <div className='lg:pr-4 mr-5'>
               <p className='mt-6 text-center md:text-left text-xl leading-8 text-gray-700'>
-                South2South Defence & Security represents the commercial
-                interests of Latin American defence and security companies in
-                the Middle East, Africa, and South Asia. <br />
-                We aim to consolidate the positioning of Latin American
-                companies in the regional market by creating synergies and
-                growth opportunities in the sector. With strategic connections
-                in the region, our team of experts ensures responsible
-                environments for G2G, G2B, and B2B negotiations for our
-                affiliates.
+                {spanish?"South2South Defence & Security representa los intereses comerciales de empresas latinoamericanas de defensa y seguridad en Medio Oriente, África y Asia del Sur.\n" +
+                    "Nuestro objetivo es consolidar la posición de las empresas latinoamericanas en el mercado regional al crear sinergias y oportunidades de crecimiento en el sector. Con conexiones estratégicas en la región, nuestro equipo de expertos asegura entornos responsables para las negociaciones G2G, G2B y B2B de nuestros afiliados.":"South2South Defence & Security represents the commercial interests of Latin American defence and security companies in the Middle East, Africa, and South Asia.\n" +
+                    "We aim to consolidate the positioning of Latin American companies in the regional market by creating synergies and growth opportunities in the sector. With strategic connections in the region, our team of experts ensures responsible environments for G2G, G2B, and B2B negotiations for our affiliates."}
               </p>
             </div>
           </div>
@@ -68,7 +60,7 @@ export default function DefenseAboutSection() {
                 role='list'
                 className='space-y-8 text-gray-600'
               >
-                <h3 className='font-bold text-[#940000] -mb-8'>Subsidiaries</h3>
+                <h3 className='font-bold text-[#940000] -mb-8'>{spanish?"Subsidiarias":"Subsidiaries"}</h3>
                 <li className='flex flex-row'>
                   <span>
                     <strong className='font-semibold text-gray-900 '>
