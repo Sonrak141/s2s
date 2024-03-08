@@ -51,7 +51,7 @@ export default function Home() {
             <source src="/Video/worldVidNoText.mp4" type="video/mp4" />
           </video>
           <div className="h-screen flex ">
-            <h1 className=" absolute top-[60%] md:text-6xl text-4xl text-center md:ml-10 text-white  font-bold ">
+            <h1 className=" absolute top-[60%] md:text-6xl text-4xl  md:ml-10 text-white  font-bold ">
               {spanish? "Abrazando la diversidad. Inspirando el crecimiento.":"Embracing diversity. Inspiring growth."}
             </h1>
           </div>

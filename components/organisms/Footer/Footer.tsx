@@ -25,7 +25,7 @@ function Footer() {
             </p>
           </div>
           <p className='ml-6'>
-            Addax Tower, Al Reem Island, Abu Dhabi, United Aran Emirates - Office 3910.
+            Addax Tower, Al Reem Island, Abu Dhabi, United Arab Emirates - Office 3910.
           </p>
           <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <PhoneIcon className='w-4 h-4 mr-2 text-[#940000]' />
@@ -33,7 +33,7 @@ function Footer() {
               <strong>{spanish?"Teléfono":"Phone"}</strong>
             </p>
           </div>
-          <p className='ml-6'>+971509139069</p>
+          <p className='ml-6'>+971 2 631 1369</p>
           <div className='flex flex-row items-center justify-center md:justify-start my-1'>
             <EnvelopeIcon className='w-4 h-4 mr-2 text-[#940000]' />
             <p>
@@ -60,7 +60,7 @@ function Footer() {
               href='/contactus'
               className='text-sm my-4 text-gray-500 hover:text-[#940000]'
             >
-              {spanish?"Contactanos":"Contac Us"}
+              {spanish?"Contáctanos":"Contac Us"}
             </Link>
           </div>
         </div>

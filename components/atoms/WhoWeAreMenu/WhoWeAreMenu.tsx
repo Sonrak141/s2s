@@ -13,12 +13,12 @@ function WhoWeAreMenu() {
           {spanish? "Nosotros": "About us"}
       </Link>
 
-      <Link
+      {/* <Link
         href='/aboutus#teammembers'
         className='pt-2 pb-2  hover:text-[#940000] px-8 rounded-sm '
       >
           {spanish? "Junta directiva": "Leadership"}
-      </Link>
+      </Link> */}
     </div>
   );
 }

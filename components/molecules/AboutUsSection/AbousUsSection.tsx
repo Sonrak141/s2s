@@ -107,8 +107,8 @@ export default function AboutUsSection() {
               </h2>
               <p className='mt-6 text-lg leading-8 text-[#161616]'>
                 {spanish?
-                    "Con sede en Abu Dabi y respaldados por Individuos de Alto Patrimonio Neto (HNWIs), en South2South hemos construido un sólido modelo de negocio que permite conexiones fluidas con gobiernos locales, empresas y socios estratégicos. Nuestro objetivo final es crear valor de manera responsable para nuestros accionistas al mismo tiempo que contribuimos al desarrollo socioeconómico de las naciones.":
-                    "Based in Abu Dhabi and supported by High Net Worth Individuals (HNWIs), at South2South we have built a robust business model that enables seamless connections with local governments, businesses, and strategic partners. Our ultimate goal is to responsibly create value for our shareholders while contributing to the socio-economic development of nations."}
+                    "Con una visión global, operamos desde dos sedes principales. Abu Dhabi es el corazón de nuestras actividades en el Medio Oriente, mientras que desde El Cairo lideramos nuestras iniciativas de negocio en África. Nos apoyamos en el respaldo de personas de alto patrimonio neto, lo que nos posibilita establecer alianzas estratégicas clave con gobiernos locales, empresas y aliados. Nuestro compromiso es fortalecer el valor para nuestros accionistas de manera sostenible y aportar al desarrollo socioeconómico de las regiones en las que operamos.":
+                    "With a global perspective, we operate with two main headquarters; Abu Dhabi is the centre for our Middle East operations, while Cairo directs our business endeavors in Africa. Our foundation is built upon the support of High-Net-Worth Individuals, enabling us to craft strategic alliances with local governments, businesses, and partners. We are committed to driving sustainable shareholder value and contributing to the socio-economic progress of the regions we serve."}
               </p>
             </div>
           </div>
@@ -116,7 +116,7 @@ export default function AboutUsSection() {
             data-aos='fade-left'
             src='/Photography/WhoWeAre/connect.jpeg'
             alt='South2South International Holding.'
-            className='max-w-2xl mt-10  sm:w-[57rem] md:-ml-4 lg:-ml-0 hidden sm:inline'
+            className='max-w-2xl mt-10 ml-4 lg:-ml-0 hidden sm:inline'
             width={2432}
             height={1442}
           />

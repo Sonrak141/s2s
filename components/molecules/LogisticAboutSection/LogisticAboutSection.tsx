@@ -65,7 +65,7 @@ function LogisticAboutSection() {
                 <li className="flex gap-x-3">
                   <span>
                     <strong className="font-semibold text-gray-900 ">
-                      S2S logistics
+                      Oceanica Ship Management
                     </strong>{" "}
                   </span>
                   <ArrowRightCircleIcon className="w-[5%] ml-3 text-[#940000]" />

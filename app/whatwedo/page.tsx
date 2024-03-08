@@ -40,7 +40,7 @@ function page() {
                   {spanish? "Estrategia":"Strategy"}
                 </h2>
                 <p className="mt-6 text-lg leading-8 text-gray-600 ">
-                  {spanish?"En S2S, creemos que el crecimiento sostenible y el éxito solo se pueden lograr a través de prácticas comerciales responsables y éticas. Nuestro compromiso de crear impactos socioeconómicos positivos en las regiones que cubrimos está en el centro de todo lo que hacemos.":"At S2S, we believe that sustainable growth and success can only be achieved through responsible and ethical business practices. Our commitment to creating positive socio-economic impacts in the regions we serve is at the heart of everything we do."}
+                  {spanish?"En S2S International Holding, creemos que el crecimiento sostenible y el éxito solo se pueden lograr a través de prácticas comerciales responsables y éticas. Nuestro compromiso de crear impactos socioeconómicos positivos en las regiones que cubrimos está en el centro de todo lo que hacemos.":"At S2S International Holding, we believe that sustainable growth and success can only be achieved through responsible and ethical business practices. Our commitment to creating positive socio-economic impacts in the regions we serve is at the heart of everything we do."}
                 </p>
               </div>
               <div className="mx-auto lg:mx-0 md:max-w-none">

@@ -62,11 +62,11 @@ export default function DefenseAboutSection() {
               >
                 <h3 className='font-bold text-[#940000] -mb-8'>{spanish?"Subsidiarias":"Subsidiaries"}</h3>
                 <li className='flex flex-row'>
-                  <span>
+                  <a href="https://www.s2sdefence.com/">
                     <strong className='font-semibold text-gray-900 '>
-                      S2S defence & security
+                      South2South Defence & Security
                     </strong>{" "}
-                  </span>
+                  </a>
                   <ArrowRightCircleIcon className='w-[5%] ml-3 text-[#940000]' />
                 </li>
               </ul>
