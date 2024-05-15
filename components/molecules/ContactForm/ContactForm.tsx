@@ -111,7 +111,7 @@ export default function ContactForm({onClose}: any) {
                             htmlFor='phone-number'
                             className='block text-sm font-semibold leading-6 text-gray-900'
                         >
-                            {spanish ? "Telefono" : "Phone number"}
+                            {spanish ? "Teléfono" : "Phone number"}
                         </label>
                         <div className='relative mt-2.5'>
                             <div className='absolute inset-y-0 left-0 flex items-center'>
@@ -179,7 +179,7 @@ export default function ContactForm({onClose}: any) {
                             </Switch>
                         </div>
                         <Switch.Label className='text-sm leading-6 text-gray-600'>
-                            {spanish ? "Selecionando, aceptas nuetras " : "By selecting this, you agree to our "}
+                            {spanish ? "Seleccionando, aceptas nuestras " : "By selecting this, you agree to our "}
                             <a href='#' className='font-semibold text-indigo-600'>
                                 privacy&nbsp;policy
                             </a>

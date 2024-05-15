@@ -85,12 +85,7 @@ function HealthcareAboutSection() {
                 No server? No problem.
               </h2>
               <p data-aos='fade-right' className='mt-6'>
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
+
               </p> */}
                         </div>
                     </div>
