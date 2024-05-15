@@ -29,7 +29,9 @@ const page = () => {
                     playsInline
                     className="w-full h-[70vh] object-cover"
                 >
-                    <source src="/Video/Desert.mp4" type="video/mp4"/>
+                    <source
+                        src="https://firebasestorage.googleapis.com/v0/b/herpe-10524.appspot.com/o/Desert.mp4?alt=media&token=987f6d99-198c-4a48-88a0-745af3b9cb1f"
+                        type="video/mp4"/>
                 </video>
             </div>
             <div className="w-[90%] mx-auto mt-10" id="whoweare">

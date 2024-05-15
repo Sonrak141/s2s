@@ -28,7 +28,9 @@ function page() {
                     muted
                     className="w-full h-[70vh] object-cover"
                 >
-                    <source src="/Video/city.mp4" type="video/mp4"/>
+                    <source
+                        src="https://firebasestorage.googleapis.com/v0/b/herpe-10524.appspot.com/o/city.mp4?alt=media&token=ad4d40db-bf85-4c2c-a753-3f25f2fd0472"
+                        type="video/mp4"/>
                 </video>
             </div>
             <div className="  mx-auto mt-10 md:mt-0">
