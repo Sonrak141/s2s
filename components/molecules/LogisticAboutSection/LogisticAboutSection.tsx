@@ -1,78 +1,79 @@
 "use client";
-import { useEffect, useState, useContext } from "react";
+import {useEffect, useState, useContext} from "react";
 import {
-  ArrowRightCircleIcon,
+    ArrowRightCircleIcon,
 } from "@heroicons/react/20/solid";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import languageContext from "@/context/languageContext";
 
 function LogisticAboutSection() {
-  const [screenWidth, setScreenWidth] = useState(769);
-  const {spanish} = useContext(languageContext)
-  const mobileThreshold = 768;
-  useEffect(() => {
-    AOS.init();
-  }, []);
-  return (
-    <div className="md:w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0">
-      <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-          <div className="lg:pr-4">
-            <div data-aos="fade-right" className="lg:max-w-lg">
-              <p className="text-base text-center md:text-left font-semibold leading-7 text-[#333333]">
-                S2S
-              </p>
-              <h1 className="mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
-                {spanish? "Logística":"Logistics"}
-              </h1>
-
-              <div
-                data-aos="fade-left"
-                className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden"
-              >
-                <img
-                  className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
-                  src="/Photography/Logistic/logisticMainSection.jpeg"
-                  alt="South2SouthLogistic"
-                />
-              </div>
-
-              <p className="mt-6 text-center md:text-left text-xl leading-8 text-gray-700 mr-5">
-                {spanish?"Con una red global y un compromiso inquebrantable con la eficiencia, la confiabilidad y la rentabilidad, South2South sirve como el puente de confianza para las empresas de logística que buscan optimizar sus operaciones.\n" +
-                    "Nuestra especialidad radica en unir a proveedores de logística con proveedores en América Latina, creando una poderosa alianza que prospera en la colaboración y el conocimiento compartido.\n":"With a global network and an unwavering commitment to efficiency, reliability, and cost-effectiveness, South2South serves as the trusted bridge for logistics companies seeking to optimise their operations.\n" +
-                    "\n" +
-                    "Our specialty lies in uniting logistics providers with suppliers in Latin America, creating a powerful alliance that thrives on collaboration and shared expertise."}
-
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
-          <div className="lg:pr-4">
+    const [screenWidth, setScreenWidth] = useState(769);
+    const {spanish} = useContext(languageContext)
+    const mobileThreshold = 768;
+    useEffect(() => {
+        AOS.init();
+    }, []);
+    return (
+        <div
+            className="md:w-[90%] mx-auto relative isolate overflow-hidden bg-white px-6 md:py-24  lg:overflow-visible lg:px-0">
             <div
-              data-aos="fade-right"
-              className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
-            >
-              <p></p>
+                className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                <div
+                    className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                    <div className="lg:pr-4">
+                        <div data-aos="fade-right" className="lg:max-w-lg">
+                            <p className="text-base text-center md:text-left font-semibold leading-7 text-[#333333]">
+                                S2S
+                            </p>
+                            <h1 className="mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
+                                {spanish ? "Logística Marítima" : "Logistics"}
+                            </h1>
 
-              <ul
-                data-aos="fade-right"
-                role="list"
-                className="space-y-8 text-gray-600"
-              >
-                <h3 className="font-bold text-[#940000] -mb-8">{spanish?"Subsidiarias":"Subsidiaries"}</h3>
-                <li className="flex gap-x-3">
+                            <div
+                                data-aos="fade-left"
+                                className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden md:hidden"
+                            >
+                                <img
+                                    className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
+                                    src="/Photography/Logistic/logisticMainSection.jpeg"
+                                    alt="South2SouthLogistic"
+                                />
+                            </div>
+
+                            <p className="mt-6 text-center md:text-left text-xl leading-8 text-gray-700 mr-5">
+                                {spanish ? "A través de nuestra filial, ofrecemos una amplia gama de servicios que incluyen buques marinos de última generación, logística offshore integral, servicios submarinos y soluciones de respuesta a emergencias. Nuestra flota moderna y extensa experiencia marítima nos permiten proporcionar soluciones personalizadas y efectivas que se adaptan para satisfacer las necesidades diversas de nuestros clientes, asegurando eficiencia y confiabilidad." : "Through our subsidiary we offer a wide array of services including cutting-edge marine vessels, comprehensive offshore logistics, subsea services, and emergency response solutions. Our modern fleet and extensive maritime expertise allow us to provide customized and effective solutions tailored to meet the diverse needs of our clients, ensuring both efficiency and reliability."}
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                    <div className="lg:pr-4">
+                        <div
+                            data-aos="fade-right"
+                            className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
+                        >
+                            <p></p>
+
+                            <ul
+                                data-aos="fade-right"
+                                role="list"
+                                className="space-y-8 text-gray-600"
+                            >
+                                <h3 className="font-bold text-[#940000] -mb-8">{spanish ? "Subsidiarias" : "Subsidiaries"}</h3>
+                                <li className="flex gap-x-3">
                   <span>
                     <strong className="font-semibold text-gray-900 ">
                       Oceanica Ship Management
                     </strong>{" "}
                   </span>
-                  <ArrowRightCircleIcon className="w-[5%] ml-3 text-[#940000]" />
-                </li>
-              </ul>
+                                    <ArrowRightCircleIcon className="w-[5%] ml-3 text-[#940000]"/>
+                                </li>
+                            </ul>
 
-              {/* <h2
+                            {/* <h2
                 data-aos='fade-right'
                 className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
               >
@@ -86,29 +87,30 @@ function LogisticAboutSection() {
                 enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
                 turpis ipsum eu a sed convallis diam.
               </p> */}
-            </div>
-          </div>
-        </div>
+                        </div>
+                    </div>
+                </div>
 
-        <div
-          data-aos="fade-left"
-          className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block"
-        >
-          <img
-            className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
-            src="/Photography/Logistic/logisticMainSection.jpeg"
-            alt="South2SouthLogistic"
-          />
-        </div>
+                <div
+                    data-aos="fade-left"
+                    className="-ml-12  lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden hidden md:block"
+                >
+                    <img
+                        className="md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 "
+                        src="/Photography/Logistic/logisticMainSection.jpeg"
+                        alt="South2SouthLogistic"
+                    />
+                </div>
 
-        <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10">
-          <div className="lg:pr-4">
-            <div
-              data-aos="fade-right"
-              className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
-            >
-              <p></p>
-              {/* <ul role='list' className='mt-8 space-y-8 text-gray-600'>
+                <div
+                    className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8 md:mb-10">
+                    <div className="lg:pr-4">
+                        <div
+                            data-aos="fade-right"
+                            className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"
+                        >
+                            <p></p>
+                            {/* <ul role='list' className='mt-8 space-y-8 text-gray-600'>
                 <li className='flex gap-x-3'>
                   <CloudArrowUpIcon
                     className='mt-1 h-5 w-5 flex-none text-indigo-600'
@@ -150,7 +152,7 @@ function LogisticAboutSection() {
                   </span>
                 </li>
               </ul> */}
-              {/* <p data-aos='fade-right' className='mt-8'>
+                            {/* <p data-aos='fade-right' className='mt-8'>
                 Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
                 odio id et. Id blandit molestie auctor fermentum dignissim.
                 Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
@@ -171,12 +173,12 @@ function LogisticAboutSection() {
                 enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
                 turpis ipsum eu a sed convallis diam.
               </p> */}
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
 
 export default LogisticAboutSection;

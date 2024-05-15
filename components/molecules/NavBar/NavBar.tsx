@@ -15,7 +15,7 @@ function NavBar({ aboutDrop, businessDrop }: any) {
           href='/contactus'
           className='text-sm md:text-md mt-1 ml-7   hover:text-[#940000]'
         >
-          {spanish? "Contáctanos": "Contact us"}
+          {spanish? "Contáctanos": "Contact Us"}
         </Link>
       </div>
     </div>
