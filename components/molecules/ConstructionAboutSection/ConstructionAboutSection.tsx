@@ -36,7 +36,7 @@ function ConstructionAboutSection() {
                             >
                                 <img
                                     className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                                    src='/Photography/Construction/constructionMain.jpeg'
+                                    src='/Photography/Construction/RealState.jpeg'
                                     alt='South2SouthConstruction'
                                 />
                             </div>
@@ -154,7 +154,7 @@ function ConstructionAboutSection() {
                 >
                     <img
                         className='md:w-[48rem] max-w-2xl rounded-xl bg-gray-900 shadow-xl ring-gray-400/10 mb-10 '
-                        src='/Photography/Construction/constructionMain.jpeg'
+                        src='/Photography/Construction/RealState.jpeg'
                         alt='South2SouthConstruction'
                     />
                 </div>

@@ -16,14 +16,14 @@ const features = [
     {
         name: "Global Perspective:",
         description:
-            "Emphasizing a global outlook and understanding of diverse cultures and markets in both LATAM and MENA.",
+            "Emphasizing a global outlook and understanding of diverse cultures and markets where we operate.",
         icon: GlobeAmericasIcon,
     },
 
     {
         name: "Partnership:",
         description:
-            "Fostering strong collaborative relationships with businesses and stakeholders in both regions.",
+            "Fostering strong collaborative relationships with businesses and stakeholders.",
         icon: UserGroupIcon,
     },
     {
@@ -41,7 +41,7 @@ const features = [
     {
         name: "Innovation:",
         description:
-            "Encouraging a culture of creativity and innovation to address the unique challenges and opportunities in LATAM and MENA.",
+            "Encouraging a culture of creativity and innovation to address unique challenges and opportunities across different industries.",
         icon: CogIcon,
     },
 
@@ -69,13 +69,13 @@ const featuresSpanish = [
     {
         name: "Diversidad e Inclusión:",
         description:
-            "Respetamos y valoramos los diferentes orígenes, perspectivas y habilidades de nuestros empleados y socios",
+            "Respetamos y valoramos los diferentes orígenes, perspectivas y habilidades de nuestros empleados y socios.",
         icon: ArrowsRightLeftIcon,
     },
     {
         name: "Integridad:",
         description:
-            "Mantenemos un firme compromiso con la honestidad, transparencia y ética en todas nuestras transacciones",
+            "Mantenemos un firme compromiso con la honestidad, transparencia y ética en todas nuestras transacciones.",
         icon: UserIcon,
     },
     {
@@ -127,7 +127,7 @@ export default function AboutUsSection() {
                 </div>
             </div>
             <h2 className='mt-20 ml-16 text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl'>
-                Our Values
+                {spanish ? "Nuestros Valores " : "Our Values"}
             </h2>
             <div className='flex justify-center items-center mt-8 md:mt-20'>
                 <dl className=' max-w-xl space-y-8 text-base leading-7 text-[#161616] lg:max-w-none'>

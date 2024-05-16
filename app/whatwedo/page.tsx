@@ -9,6 +9,8 @@ import LogisticAboutSection from "@/components/molecules/LogisticAboutSection/Lo
 import {stats, statsSpanish} from "@/components/constants";
 import Footer from "@/components/organisms/Footer/Footer";
 import languageContext from "@/context/languageContext";
+import RetailAboutSection from "@/components/molecules/RetailSection/RetailAboutSection";
+import EducationAboutSection from "@/components/molecules/EducationAboutSection/EducationAboutSection";
 
 function page() {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -82,6 +84,13 @@ function page() {
                 <div id="health">
                     <HealthcareAboutSection/>
                 </div>
+
+                <div id="education">
+                    <EducationAboutSection/>
+                </div>
+                <div id="retail">
+                    <RetailAboutSection/>
+                </div>
                 <div id="defence">
                     <DefenseAboutSection/>
                 </div>
@@ -92,6 +101,7 @@ function page() {
                 <div id="construction">
                     <ConstructionAboutSection/>
                 </div>
+
             </div>
             <Footer/>
         </div>

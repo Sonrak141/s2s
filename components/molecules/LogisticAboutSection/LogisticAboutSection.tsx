@@ -27,7 +27,7 @@ function LogisticAboutSection() {
                                 S2S
                             </p>
                             <h1 className="mt-2 text-center md:text-left text-3xl font-bold tracking-tight text-[#940000] sm:text-4xl">
-                                {spanish ? "Logística Marítima" : "Logistics"}
+                                {spanish ? "Logística Marítima" : "Marine Logistics"}
                             </h1>
 
                             <div
@@ -64,29 +64,29 @@ function LogisticAboutSection() {
                             >
                                 <h3 className="font-bold text-[#940000] -mb-8">{spanish ? "Subsidiarias" : "Subsidiaries"}</h3>
                                 <li className="flex gap-x-3">
-                  <span>
-                    <strong className="font-semibold text-gray-900 ">
-                      Oceanica Ship Management
-                    </strong>{" "}
-                  </span>
+                      <span>
+                        <strong className="font-semibold text-gray-900 ">
+                          Oceanica Ship Management
+                        </strong>{" "}
+                      </span>
                                     <ArrowRightCircleIcon className="w-[5%] ml-3 text-[#940000]"/>
                                 </li>
                             </ul>
 
                             {/* <h2
-                data-aos='fade-right'
-                className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
-              >
-                No server? No problem.
-              </h2>
-              <p data-aos='fade-right' className='mt-6'>
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
-              </p> */}
+                    data-aos='fade-right'
+                    className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
+                  >
+                    No server? No problem.
+                  </h2>
+                  <p data-aos='fade-right' className='mt-6'>
+                    Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
+                    consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
+                    vitae interdum mauris enim, consequat vulputate nibh. Maecenas
+                    pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
+                    enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
+                    turpis ipsum eu a sed convallis diam.
+                  </p> */}
                         </div>
                     </div>
                 </div>
@@ -111,68 +111,68 @@ function LogisticAboutSection() {
                         >
                             <p></p>
                             {/* <ul role='list' className='mt-8 space-y-8 text-gray-600'>
-                <li className='flex gap-x-3'>
-                  <CloudArrowUpIcon
-                    className='mt-1 h-5 w-5 flex-none text-indigo-600'
-                    aria-hidden='true'
-                  />
-                  <span>
-                    <strong className='font-semibold text-gray-900'>
-                      Push to deploy.
-                    </strong>{" "}
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Maiores impedit perferendis suscipit eaque, iste dolor
-                    cupiditate blanditiis ratione.
-                  </span>
-                </li>
-                <li className='flex gap-x-3'>
-                  <LockClosedIcon
-                    className='mt-1 h-5 w-5 flex-none text-indigo-600'
-                    aria-hidden='true'
-                  />
-                  <span>
-                    <strong className='font-semibold text-gray-900'>
-                      SSL certificates.
-                    </strong>{" "}
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo.
-                  </span>
-                </li>
-                <li className='flex gap-x-3'>
-                  <ServerIcon
-                    className='mt-1 h-5 w-5 flex-none text-indigo-600'
-                    aria-hidden='true'
-                  />
-                  <span>
-                    <strong className='font-semibold text-gray-900'>
-                      Database backups.
-                    </strong>{" "}
-                    Ac tincidunt sapien vehicula erat auctor pellentesque
-                    rhoncus. Et magna sit morbi lobortis.
-                  </span>
-                </li>
-              </ul> */}
+                    <li className='flex gap-x-3'>
+                      <CloudArrowUpIcon
+                        className='mt-1 h-5 w-5 flex-none text-indigo-600'
+                        aria-hidden='true'
+                      />
+                      <span>
+                        <strong className='font-semibold text-gray-900'>
+                          Push to deploy.
+                        </strong>{" "}
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Maiores impedit perferendis suscipit eaque, iste dolor
+                        cupiditate blanditiis ratione.
+                      </span>
+                    </li>
+                    <li className='flex gap-x-3'>
+                      <LockClosedIcon
+                        className='mt-1 h-5 w-5 flex-none text-indigo-600'
+                        aria-hidden='true'
+                      />
+                      <span>
+                        <strong className='font-semibold text-gray-900'>
+                          SSL certificates.
+                        </strong>{" "}
+                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                        qui lorem cupidatat commodo.
+                      </span>
+                    </li>
+                    <li className='flex gap-x-3'>
+                      <ServerIcon
+                        className='mt-1 h-5 w-5 flex-none text-indigo-600'
+                        aria-hidden='true'
+                      />
+                      <span>
+                        <strong className='font-semibold text-gray-900'>
+                          Database backups.
+                        </strong>{" "}
+                        Ac tincidunt sapien vehicula erat auctor pellentesque
+                        rhoncus. Et magna sit morbi lobortis.
+                      </span>
+                    </li>
+                  </ul> */}
                             {/* <p data-aos='fade-right' className='mt-8'>
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
-              </p>
-              <h2
-                data-aos='fade-right'
-                className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
-              >
-                No server? No problem.
-              </h2>
-              <p data-aos='fade-right' className='mt-6'>
-                Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
-                vitae interdum mauris enim, consequat vulputate nibh. Maecenas
-                pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
-                enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                turpis ipsum eu a sed convallis diam.
-              </p> */}
+                    Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
+                    odio id et. Id blandit molestie auctor fermentum dignissim.
+                    Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
+                    et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
+                    et ut. Ac lorem vel integer orci.
+                  </p>
+                  <h2
+                    data-aos='fade-right'
+                    className='mt-16 text-2xl font-bold tracking-tight text-gray-900'
+                  >
+                    No server? No problem.
+                  </h2>
+                  <p data-aos='fade-right' className='mt-6'>
+                    Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
+                    consequat in. Convallis arcu ipsum urna nibh. Pharetra, euismod
+                    vitae interdum mauris enim, consequat vulputate nibh. Maecenas
+                    pellentesque id sed tellus mauris, ultrices mauris. Tincidunt
+                    enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
+                    turpis ipsum eu a sed convallis diam.
+                  </p> */}
                         </div>
                     </div>
                 </div>
